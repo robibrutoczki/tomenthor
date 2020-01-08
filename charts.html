@@ -35,23 +35,25 @@
           
 </head>
 
-<body>
+
+<body id="body" class="bg-light">
 
   <div class="d-flex" id="wrapper">
 
-    
     <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
+    <div class=" border-right" id="sidebar-wrapper">
       <div class="sidebar-heading">Dashboard</div>
       <div class="list-group list-group-flush" id="list">
         <a href="about.html" class="list-group-item border-bottom list-group-item-action ">About</a>
         <a href="ticker.html" class="list-group-item border-bottom list-group-item-action ">BTC tickers</a>
-        <a href="etherticker.html" class="list-group-item border-bottom list-group-item-action ">ETH tickers</a>
+        <a href="table.html" class="list-group-item border-bottom list-group-item-action ">Tables</a>
         <a href="exchange.html" class="list-group-item border-bottom list-group-item-action ">Excange</a>
         <a href="charts.html" class="list-group-item border-bottom list-group-item-action ">Charts</a>
         <a href="github.html" class="list-group-item border-bottom list-group-item-action ">Github</a>
       </div>
     </div>
+  
+
     <!-- /#sidebar-wrapper -->
    
 
@@ -161,20 +163,11 @@
               $("#wrapper").toggleClass("toggled");
             });
 
-            $("#darkSwitch").click(function (b) {
-
-                $(".nav-link,.border-bottom,mt-4,div,body,h1").toggleClass("bg-dark");
-              $(".nav-link,.border-bottom,mt-4,div,body,h1").toggleClass("text-light");
-
-            });
-             $("#octo").click(function () {
-
-              $("#chart").toggleClass(".mychart10");
-            });
+        
 
 
       </script>
-       
+    <script src="js/darkswitch.js"></script>
   
 
 </body>

@@ -17,8 +17,9 @@
   <!-- Custom styles for this template -->
   <link href="css/sidebar.css" rel="stylesheet">
   <!--Theme JS-->
-  
-   <script src="darklight.js"></script>
+  <link href="css/github.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="js/github.js"></script>
 
 </head>
 
@@ -27,17 +28,19 @@
   <div class="d-flex" id="wrapper">
 
     <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
+    <div class=" border-right" id="sidebar-wrapper">
       <div class="sidebar-heading">Dashboard</div>
-      <div class="list-group list-group-flush"id="list">
+      <div class="list-group list-group-flush" id="list">
         <a href="about.html" class="list-group-item border-bottom list-group-item-action ">About</a>
         <a href="ticker.html" class="list-group-item border-bottom list-group-item-action ">BTC tickers</a>
-        <a href="etherticker.html" class="list-group-item border-bottom list-group-item-action ">Eth tickers</a>
+        <a href="table.html" class="list-group-item border-bottom list-group-item-action ">Tables</a>
         <a href="exchange.html" class="list-group-item border-bottom list-group-item-action ">Excange</a>
         <a href="charts.html" class="list-group-item border-bottom list-group-item-action ">Charts</a>
         <a href="github.html" class="list-group-item border-bottom list-group-item-action ">Github</a>
       </div>
     </div>
+    <!-- /#sidebar-wrapper -->
+
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
@@ -83,8 +86,23 @@
       </nav>
       <!---End of Navbar-->
       <div class="container-fluid">
-        <h1 class="mt-4">github</h1>
-        <p> </p>
+        <h1 class="mt-4">Github</h1>
+        <hr class="my-4">
+        <div class="row bg-color-contact">
+        
+          <div class="col m-1">
+            <h3 class="contact-heading uppercase text-center">View My GitHub Projects :</h3>
+            <h5 class="uppercase text-center">You can also search on other user profiles...</h5>
+          </div>
+          
+        </div>
+        <div class="jumbotron col m-1">
+          <div class="center-form">
+            <input type="text" id="gh-username" value="robibrutoczki" oninput="fetchGitHubInformation()" />
+            <div id="gh-user-data"></div>
+            <div id="gh-repo-data"></div>
+          </div>
+        </div></div>
     </div>
     <!-- /#page-content-wrapper -->
 
@@ -102,16 +120,10 @@
       $("#wrapper").toggleClass("toggled");
     });
 
-     $("#darkSwitch").click(function (b) {
-      
-        $(".nav-link,.border-bottom,mt-4,div,body,h1").toggleClass("bg-dark");
-        $(".nav-link,.border-bottom,mt-4,div,body,h1").toggleClass("text-light");
-        
-      });
    
   </script>
 <!--Theme JS-->
-
+<script src="js/darkswitch.js"></script>
 </body>
 
 </html>

@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Simple Sidebar - Start Bootstrap Template</title>
+  <title>Tables</title>
   <!--Favicon-->
   <link rel="shortcut icon" type="image/png" href="img/en-fav.png" />
   <!-- Bootstrap core CSS -->
@@ -16,10 +16,13 @@
 
   <!-- Custom styles for this template -->
   <link href="css/sidebar.css" rel="stylesheet">
-  <!--Theme JS-->
   
-   <script src="darklight.js"></script>
-
+  <!--Table JS-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   <script src="js/tables9.js"></script>
+   <script src="js/tables10.js"></script>
+   <script src="js/tables11.js"></script>
+   <script src="js/tables12.js"></script>
 </head>
 
 <body id="body" class="bg-light">
@@ -27,18 +30,20 @@
   <div class="d-flex" id="wrapper">
 
     <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
+    <div class=" border-right" id="sidebar-wrapper">
       <div class="sidebar-heading">Dashboard</div>
-      <div class="list-group list-group-flush"id="list">
+      <div class="list-group list-group-flush" id="list">
         <a href="about.html" class="list-group-item border-bottom list-group-item-action ">About</a>
         <a href="ticker.html" class="list-group-item border-bottom list-group-item-action ">BTC tickers</a>
-        <a href="etherticker.html" class="list-group-item border-bottom list-group-item-action ">Eth tickers</a>
+        <a href="table.html" class="list-group-item border-bottom list-group-item-action ">Tables</a>
         <a href="exchange.html" class="list-group-item border-bottom list-group-item-action ">Excange</a>
         <a href="charts.html" class="list-group-item border-bottom list-group-item-action ">Charts</a>
         <a href="github.html" class="list-group-item border-bottom list-group-item-action ">Github</a>
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
+
+
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
@@ -84,8 +89,24 @@
       <!---End of Navbar-->
 
       <div class="container-fluid">
-        <h1 class="mt-4">Something</h1>
-        <p></p>
+        <div class="table-responsive">
+        <h1 class="text-center">Historical data of BTC</h1>
+       
+        <div class="text-center">
+            <button type="button" name="load_data" id="load_data9" class="btn btn-info">Sept 2019</button>
+            <button type="button" name="load_data" id="load_data10" class="btn btn-info">Oct 2019</button>
+            <button type="button" name="load_data" id="load_data11" class="btn btn-info">Nov 2019</button>
+            <button type="button" name="load_data" id="load_data12" class="btn btn-info">Dec 2019</button>
+        </div>
+       
+        
+        <hr class="my-4">
+      
+       
+         
+      <div id="data" class="col">
+        </div>
+        </div>
        </div>
     </div>
     <!-- /#page-content-wrapper -->
@@ -104,16 +125,11 @@
       $("#wrapper").toggleClass("toggled");
     });
 
-     $("#darkSwitch").click(function (b) {
-      
-        $(".nav-link,.border-bottom,mt-4,div,body,h1").toggleClass("bg-dark");
-        $(".nav-link,.border-bottom,mt-4,div,body,h1").toggleClass("text-light");
-        
-      });
+    
    
   </script>
 <!--Theme JS-->
-
+<script src="js/darkswitch.js"></script>
 </body>
 
 </html>

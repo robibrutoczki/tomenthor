@@ -26,18 +26,17 @@
   
  
 </head>
-
 <body id="body" class="bg-light">
 
   <div class="d-flex" id="wrapper">
 
     <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
+    <div class=" border-right" id="sidebar-wrapper">
       <div class="sidebar-heading">Dashboard</div>
       <div class="list-group list-group-flush" id="list">
         <a href="about.html" class="list-group-item border-bottom list-group-item-action ">About</a>
         <a href="ticker.html" class="list-group-item border-bottom list-group-item-action ">BTC tickers</a>
-        <a href="etherticker.html" class="list-group-item border-bottom list-group-item-action ">ETH tickers</a>
+        <a href="table.html" class="list-group-item border-bottom list-group-item-action ">Tables</a>
         <a href="exchange.html" class="list-group-item border-bottom list-group-item-action ">Excange</a>
         <a href="charts.html" class="list-group-item border-bottom list-group-item-action ">Charts</a>
         <a href="github.html" class="list-group-item border-bottom list-group-item-action ">Github</a>
@@ -45,53 +44,56 @@
     </div>
     <!-- /#sidebar-wrapper -->
 
-  <!-- Page Content -->
+
+
+    <!-- Page Content -->
     <div id="page-content-wrapper">
       <nav class="navbar navbar-expand-lg  navbar-light border-bottom">
         <button class="btn btn-light border-dark" id="menu-toggle">Dash</button>
-    <div class="custom-control  justify-content-end custom-switch">
-  
-    
-      <button class="btn btn-light border-dark" id="darkSwitch">Dark</button>
-      <button class="navbar-toggler bg-light border-dark" type="button" data-toggle="collapse"
-        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon "></span>
-      </button>
-    </div>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav  mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li>
-  
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Themes
-          </a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Light</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Red</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!---End of Navbar-->
-      
+        <div class="custom-control  justify-content-end custom-switch">
+
+
+          <button class="btn btn-light border-dark" id="darkSwitch">Dark</button>
+          <button class="navbar-toggler bg-light border-dark" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav  mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Themes
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Light</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Red</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!---End of Navbar-->
       <!--MARQUEE-->
-        <h1 class="ml-4">Tickers:</h1>
+        <h1 class="ml-4">Tickers</h1>
+        
         <marquee>
               <table class="table">
+                
              <th scope="col">BTC</th>
              <td class="btcusd"></td>
              <th scope="col">ETH</th>
@@ -256,16 +258,9 @@
               $("#wrapper").toggleClass("toggled");
             });
 
-            $("#darkSwitch").click(function (b) {
-
-              $("navbar-toggler-icon,.nav-link,.border-bottom,mt-4,div,body,h1").toggleClass("bg-dark");
-              $("td,th,navbar-toggler-icon,.nav-link,.border-bottom,mt-4,div,body,h1").toggleClass("text-light");
-
-            });
-
           </script>
           <!--Theme JS-->
-
+<script src="js/darkswitch.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,7 @@
 
+
+
+
 body {
   overflow-x: hidden;
 }
@@ -57,3 +60,7 @@ body {
     margin-left: -15rem;
   }
 }
+.black{
+   background-color: #36454f;
+   color:orange;}
+
