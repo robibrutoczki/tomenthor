@@ -18,30 +18,41 @@
   <link href="css/sidebar.css" rel="stylesheet">
   
   <!--Table JS-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
    <script src="js/tables9.js"></script>
    <script src="js/tables10.js"></script>
    <script src="js/tables11.js"></script>
    <script src="js/tables12.js"></script>
+
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/97e327c4f9.js" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body id="body" class="bg-light">
 
   <div class="d-flex" id="wrapper">
 
-    <!-- Sidebar -->
-    <div class=" border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">Dashboard</div>
-      <div class="list-group list-group-flush" id="list">
-        <a href="index.html" class="list-group-item border-bottom list-group-item-action ">About</a>
-        <a href="ticker.html" class="list-group-item border-bottom list-group-item-action ">BTC tickers</a>
-        <a href="table.html" class="list-group-item border-bottom list-group-item-action ">Tables</a>
-        <a href="exchange.html" class="list-group-item border-bottom list-group-item-action ">Excange</a>
-        <a href="charts.html" class="list-group-item border-bottom list-group-item-action ">Charts</a>
-        <a href="github.html" class="list-group-item border-bottom list-group-item-action ">Github</a>
-      </div>
+  <!-- Sidebar -->
+  <div class=" border-right" id="sidebar-wrapper">
+    <div class="sidebar-heading">Dashboard</div>
+    <div class="list-group list-group-flush" id="list">
+      <a href="index.html" class="list-group-item border-bottom list-group-item-action"><i class="fab fa-artstation">
+        </i> About</a>
+      <a href="ticker.html" class="list-group-item border-bottom list-group-item-action "><i class="fab fa-btc"> </i> BTC
+        tickers</a>
+      <a href="table.html" class="list-group-item border-bottom list-group-item-action "><i class="fas fa-table">
+        </i> Tables</a>
+      <a href="exchange.html" class="list-group-item border-bottom list-group-item-action "><i
+          class="fas fa-exchange-alt"> </i> Excange</a>
+      <a href="charts.html" class="list-group-item border-bottom list-group-item-action "><i class="fas fa-chart-bar">
+        </i> Charts</a>
+      <a href="github.html" class="list-group-item border-bottom list-group-item-action "><i class="fab fa-github-square">
+        </i> Github</a>
     </div>
-    <!-- /#sidebar-wrapper -->
+  </div>
+  <!-- /#sidebar-wrapper -->
 
 
 
@@ -90,13 +101,49 @@
 
       <div class="container-fluid">
         <div class="table-responsive">
+         <marquee>
+          <table class="table">
+        
+            <th scope="col">BTC</th>
+            <td class="btcusd"></td>
+            <th scope="col">ETH</th>
+            <td class="ethusd"></td>
+            <th scope="col">XRP</th>
+            <td class="xrpusd"></td>
+            <th scope="col">LTC</th>
+            <td class="ltcusd"></td>
+            <th scope="col">BCH</th>
+            <td class="bchusd"></td>
+            <th scope="col">BTC</th>
+            <td class="btcusd"></td>
+            <th scope="col">ETH</th>
+            <td class="ethusd"></td>
+            <th scope="col">XRP</th>
+            <td class="xrpusd"></td>
+            <th scope="col">LTC</th>
+            <td class="ltcusd"></td>
+            <th scope="col">BCH</th>
+            <td class="bchusd"></td>
+            <th scope="col">BTC</th>
+            <td class="btcusd"></td>
+            <th scope="col">ETH</th>
+            <td class="ethusd"></td>
+            <th scope="col">XRP</th>
+            <td class="xrpusd"></td>
+            <th scope="col">LTC</th>
+            <td class="ltcusd"></td>
+            <th scope="col">BCH</th>
+            <td class="bchusd"></td>
+          </table>
+        
+        </marquee>
         <h1 class="text-center">Historical data of BTC</h1>
        
         <div class="text-center">
-            <button type="button" name="load_data" id="load_data9" class="btn btn-info">Sept 2019</button>
-            <button type="button" name="load_data" id="load_data10" class="btn btn-info">Oct 2019</button>
-            <button type="button" name="load_data" id="load_data11" class="btn btn-info">Nov 2019</button>
-            <button type="button" name="load_data" id="load_data12" class="btn btn-info">Dec 2019</button>
+            <button type="button" name="load_data" id="load_data9" class="btn btn-info m-2">Sept 2019</button>
+            <button type="button" name="load_data" id="load_data10" class="btn btn-info m-2">Oct 2019</button>
+            <button type="button" name="load_data" id="load_data11" class="btn btn-info m-2">Nov 2019</button>
+            <button type="button" name="load_data" id="load_data12" class="btn btn-info m-2">Dec 2019</button>
         </div>
        
         
@@ -104,7 +151,7 @@
       
        
          
-      <div id="data" class="col">
+      <div id="data" class="col text-light">
         </div>
         </div>
        </div>
@@ -128,6 +175,8 @@
     
    
   </script>
+  <!--ticker.js--->
+  <script src="chart/ticker.js"></script>
 <!--Theme JS-->
 <script src="js/darkswitch.js"></script>
 </body>

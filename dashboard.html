@@ -16,6 +16,16 @@
 
   <!-- Custom styles for this template -->
   <link href="css/sidebar.css" rel="stylesheet">
+    <!-- Load papaparse.js -->
+    <script src="js/chart/papaparse.min.js"></script>
+    
+    <!-- Load d3.js and c3.js -->
+    <script src="js/d3.js"></script>
+    <script src="c3/c3.min.js"></script>
+<!--Fontawesome-->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/97e327c4f9.js" crossorigin="anonymous"></script>
+<!---js-->
 
 </head>
 
@@ -23,19 +33,26 @@
 
   <div class="d-flex" id="wrapper">
 
-    <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">Start Bootstrap </div>
-      <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
-      </div>
+  <!-- Sidebar -->
+  <div class=" border-right" id="sidebar-wrapper">
+    <div class="sidebar-heading">Dashboard</div>
+    <div class="list-group list-group-flush" id="list">
+      <a href="index.html" class="list-group-item border-bottom list-group-item-action"><i class="fab fa-artstation">
+        </i> About</a>
+      <a href="ticker.html" class="list-group-item border-bottom list-group-item-action "><i class="fab fa-btc"> </i> BTC
+        tickers</a>
+      <a href="table.html" class="list-group-item border-bottom list-group-item-action "><i class="fas fa-table">
+        </i> Tables</a>
+      <a href="exchange.html" class="list-group-item border-bottom list-group-item-action "><i
+          class="fas fa-exchange-alt"> </i> Excange</a>
+      <a href="charts.html" class="list-group-item border-bottom list-group-item-action "><i class="fas fa-chart-bar">
+        </i> Charts</a>
+      <a href="github.html" class="list-group-item border-bottom list-group-item-action "><i class="fab fa-github-square">
+        </i> Github</a>
     </div>
-    <!-- /#sidebar-wrapper -->
+  </div>
+  <!-- /#sidebar-wrapper -->
+
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
@@ -82,17 +99,21 @@
 
       <div class="container-fluid">
         <h1 class="mt-4">Simple Sidebar</h1>
-        <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
-        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
-      </div>
+      <div id="demo">
+        <div id="buttons">
+          <button id="High">bid</button>
+          <button id="age">Age</button>
+          <button id="race">Race</button>
+        </div></div>
     </div>
+    </div><div id="high"></div>
     <!-- /#page-content-wrapper -->
 
   </div>
   <!-- /#wrapper -->
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
+  
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Menu Toggle Script -->

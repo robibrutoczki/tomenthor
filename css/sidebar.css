@@ -2,9 +2,10 @@
 
 
 
-body {
-  overflow-x: hidden;
+::-webkit-scrollbar {
+display: none;
 }
+
 
 #sidebar-wrapper {
   min-height: 100vh;
@@ -61,6 +62,15 @@ body {
   }
 }
 .black{
-   background-color: #36454f;
-   color:orange;}
+   background-color: #0e1113;
+   color:rgb(218, 220, 230);}
 
+
+
+  .card{   background-color: rgb(129, 129, 136);
+           border-color: rgb(27, 17, 17);
+           border-radius: 15px;
+       }
+
+.card-img-top{border-color: cadetblue;
+  border-radius: 15px;}

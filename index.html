@@ -19,7 +19,8 @@
   <!--Theme JS-->
   <script src="\js\vendor\jquery-slim.min.js"></script>
  
-  
+ <!--Fontawesome-->
+  <script src="https://kit.fontawesome.com/97e327c4f9.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -27,19 +28,26 @@
 
   <div class="d-flex" id="wrapper">
 
-    <!-- Sidebar -->
-    <div class=" border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">Dashboard</div>
-      <div class="list-group list-group-flush" id="list">
-        <a href="index.html" class="list-group-item border-bottom list-group-item-action ">About</a>
-        <a href="ticker.html" class="list-group-item border-bottom list-group-item-action ">BTC tickers</a>
-        <a href="table.html" class="list-group-item border-bottom list-group-item-action ">Tables</a>
-        <a href="exchange.html" class="list-group-item border-bottom list-group-item-action ">Excange</a>
-        <a href="charts.html" class="list-group-item border-bottom list-group-item-action ">Charts</a>
-        <a href="github.html" class="list-group-item border-bottom list-group-item-action ">Github</a>
-      </div>
+  <!-- Sidebar -->
+  <div class=" border-right" id="sidebar-wrapper">
+    <div class="sidebar-heading">Dashboard</div>
+    <div class="list-group list-group-flush" id="list">
+      <a href="index.html" class="list-group-item border-bottom list-group-item-action"><i class="fab fa-artstation">
+        </i> About</a>
+      <a href="ticker.html" class="list-group-item border-bottom list-group-item-action "><i class="fab fa-btc"> </i> BTC
+        tickers</a>
+      <a href="table.html" class="list-group-item border-bottom list-group-item-action "><i class="fas fa-table">
+        </i> Tables</a>
+      <a href="exchange.html" class="list-group-item border-bottom list-group-item-action "><i
+          class="fas fa-exchange-alt"> </i> Excange</a>
+      <a href="charts.html" class="list-group-item border-bottom list-group-item-action "><i class="fas fa-chart-bar">
+        </i> Charts</a>
+      <a href="github.html" class="list-group-item border-bottom list-group-item-action "><i class="fab fa-github-square">
+        </i> Github</a>
     </div>
-    <!-- /#sidebar-wrapper -->
+  </div>
+  <!-- /#sidebar-wrapper -->
+
 
 
 
@@ -88,6 +96,43 @@
     
       <div class="container-fluid">
         <div class="jumbotron">
+        
+        <marquee>
+          <table class="table">
+        
+            <th scope="col">BTC</th>
+            <td class="btcusd"></td>
+            <th scope="col">ETH</th>
+            <td class="ethusd"></td>
+            <th scope="col">XRP</th>
+            <td class="xrpusd"></td>
+            <th scope="col">LTC</th>
+            <td class="ltcusd"></td>
+            <th scope="col">BCH</th>
+            <td class="bchusd"></td>
+            <th scope="col">BTC</th>
+            <td class="btcusd"></td>
+            <th scope="col">ETH</th>
+            <td class="ethusd"></td>
+            <th scope="col">XRP</th>
+            <td class="xrpusd"></td>
+            <th scope="col">LTC</th>
+            <td class="ltcusd"></td>
+            <th scope="col">BCH</th>
+            <td class="bchusd"></td>
+            <th scope="col">BTC</th>
+            <td class="btcusd"></td>
+            <th scope="col">ETH</th>
+            <td class="ethusd"></td>
+            <th scope="col">XRP</th>
+            <td class="xrpusd"></td>
+            <th scope="col">LTC</th>
+            <td class="ltcusd"></td>
+            <th scope="col">BCH</th>
+            <td class="bchusd"></td>
+          </table>
+        
+        </marquee>
         <hr class="my-4">
           <h1>Cryptocurrency</h1>
           <hr class="my-4">
@@ -362,7 +407,7 @@
               <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">Wallets</h5>
-                  <img src="img/wallet.png" style="height:50px;background-color:ivory;" alt="wallet logo">
+                  <img src="img/wallet.png" style="height:50px;" alt="wallet logo">
                   <p>A cryptocurrency wallet is a device, physical medium, program or a service which stores</p>
                   <!-- Button trigger modal -->
                   <button type="button" class="btn  btn-light border-dark" data-toggle="modal" data-target="#Modal6">
@@ -414,6 +459,8 @@
     });
      
 </script>
+<!--ticker.js--->
+<script src="chart/ticker.js"></script>
   <!--Theme JS-->
 <script src="js/darkswitch.js"></script>
 </body>

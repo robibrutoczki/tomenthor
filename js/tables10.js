@@ -5,7 +5,7 @@ $(document).ready(function () {
             dataType: "text",
             success: function (data) {
                 var btc_data = data.split(/\r?\n|\r/);
-                var table_data = '<table class="table table-bordered table-striped">';
+                var table_data = '<table class="table table-bordered table-striped bg-dark text-light">';
                 for (var count = 0; count < btc_data.length; count++) {
                     var cell_data = btc_data[count].split(",");
                     table_data += '<tr>';

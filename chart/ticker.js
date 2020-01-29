@@ -3,10 +3,10 @@
 function ticker() {
     $.ajax({
         url: "https://www.bitstamp.net/api/v2/ticker/ethusd/",
-        type: 'get',
+        type: 'post',
         dataType: 'json',
         success: function (data, textStatus, jqXHR) {
-            console.log(data);
+            
             $('#selleth').html(data.bid);
             $('#buyeth').html(data.ask);
             $('.ethusd').html(data.bid);
@@ -27,10 +27,10 @@ ticker();
 function ticker2() {
     $.ajax({
         url: "https://www.bitstamp.net/api/v2/ticker/xrpusd/",
-        type: 'get',
+        type: 'post',
         dataType: 'json',
         success: function (data, textStatus, jqXHR) {
-            console.log(data);
+          
             $('.xrpusd').html(data.ask);
            
             ticker2();
@@ -46,10 +46,10 @@ ticker2();
 function ticker3() {
     $.ajax({
         url: "https://www.bitstamp.net/api/v2/ticker/ltcusd/",
-        type: 'get',
+        type: 'post',
         dataType: 'json',
         success: function (data, textStatus, jqXHR) {
-            console.log(data);
+          
             $('.ltcusd').html(data.ask);
 
             ticker3();
@@ -65,10 +65,10 @@ ticker3();
 function ticker4() {
     $.ajax({
         url: "https://www.bitstamp.net/api/v2/ticker/bchusd/",
-        type: 'get',
+        type: 'post',
         dataType: 'json',
         success: function (data, textStatus, jqXHR) {
-            console.log(data);
+            
             $('.bchusd').html(data.ask);
 
             ticker4();
@@ -84,10 +84,10 @@ ticker4();
 function ticker5() {
     $.ajax({
         url: "https://www.bitstamp.net/api/ticker",
-        type: 'get',
+        type: 'post',
         dataType: 'json',
         success: function (data, textStatus, jqXHR) {
-            console.log(data);
+         
             $('.btcusd').html(data.bid);
             $('#buy').html(data.ask);
             $('#volume').html(parseFloat(data.volume).toFixed(2));
@@ -106,10 +106,10 @@ ticker5();
 function ticker6() {
 $.ajax({
     url: "https://www.bitstamp.net/api/v2/ticker/btceur/",
-    type: 'get',
+    type: 'post',
     dataType: 'json',
     success: function (data, textStatus, jqXHR) {
-        console.log(data);
+       
         $('#selleuro').html(data.bid);
         $('#buyeuro').html(data.ask);
         $('#volumeeuro').html(parseFloat(data.volume).toFixed(2));

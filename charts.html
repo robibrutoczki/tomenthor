@@ -29,10 +29,11 @@
           <!-- Load d3.js and c3.js -->
           <script src="js/d3.js"></script>
           <script src="c3/c3.min.js"></script>
-          <!--Charts-->
-          <script src="chart/chart1.js"></script>
-          <script src="chart/chart2.js"></script>
-          
+          <script src="https://d3js.org/d3.v4.min.js"></script>
+         
+          <!--Fontawesome-->
+          <script src="https://kit.fontawesome.com/97e327c4f9.js" SameSite="Lax"  crossorigin="anonymous"></script>
+  
 </head>
 
 
@@ -40,22 +41,26 @@
 
   <div class="d-flex" id="wrapper">
 
-    <!-- Sidebar -->
-    <div class=" border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">Dashboard</div>
-      <div class="list-group list-group-flush" id="list">
-        <a href="index.html" class="list-group-item border-bottom list-group-item-action ">About</a>
-        <a href="ticker.html" class="list-group-item border-bottom list-group-item-action ">BTC tickers</a>
-        <a href="table.html" class="list-group-item border-bottom list-group-item-action ">Tables</a>
-        <a href="exchange.html" class="list-group-item border-bottom list-group-item-action ">Excange</a>
-        <a href="charts.html" class="list-group-item border-bottom list-group-item-action ">Charts</a>
-        <a href="github.html" class="list-group-item border-bottom list-group-item-action ">Github</a>
-      </div>
-    </div>
-  
+<!-- Sidebar -->
+<div class=" border-right" id="sidebar-wrapper">
+  <div class="sidebar-heading">Dashboard</div>
+  <div class="list-group list-group-flush" id="list">
+    <a href="index.html" class="list-group-item border-bottom list-group-item-action"><i class="fab fa-artstation">
+      </i> About</a>
+    <a href="ticker.html" class="list-group-item border-bottom list-group-item-action "><i class="fab fa-btc"> </i> BTC
+      tickers</a>
+    <a href="table.html" class="list-group-item border-bottom list-group-item-action "><i class="fas fa-table">
+      </i> Tables</a>
+    <a href="exchange.html" class="list-group-item border-bottom list-group-item-action "><i
+        class="fas fa-exchange-alt"> </i> Excange</a>
+    <a href="charts.html" class="list-group-item border-bottom list-group-item-action "><i class="fas fa-chart-bar">
+      </i> Charts</a>
+    <a href="github.html" class="list-group-item border-bottom list-group-item-action "><i class="fab fa-github-square">
+      </i> Github</a>
+  </div>
+</div>
+<!-- /#sidebar-wrapper -->
 
-    <!-- /#sidebar-wrapper -->
-   
 
       <!-- Page Content -->
       <div id="page-content-wrapper">
@@ -99,40 +104,108 @@
       </div>
     </nav>
     <!---End of Navbar-->
+    
+
 
       <div class="container-fluid">
-      
-        <h1 class=""> Charts</h1>
-       
-      <!-- CARDS -->
-      <div class="card-deck">
-        <div class="card">
-         
-          <div class="card-body">
-            <div>
-            <h5 class="card-title ml-0">BTC High/Low</h5>
-      
-            </div>
-           <div id="chart" class="mychart9">
-          </div>
-          
+        <marquee>
+          <table class="table">
+        
+            <th scope="col">BTC</th>
+            <td class="btcusd"></td>
+            <th scope="col">ETH</th>
+            <td class="ethusd"></td>
+            <th scope="col">XRP</th>
+            <td class="xrpusd"></td>
+            <th scope="col">LTC</th>
+            <td class="ltcusd"></td>
+            <th scope="col">BCH</th>
+            <td class="bchusd"></td>
+            <th scope="col">BTC</th>
+            <td class="btcusd"></td>
+            <th scope="col">ETH</th>
+            <td class="ethusd"></td>
+            <th scope="col">XRP</th>
+            <td class="xrpusd"></td>
+            <th scope="col">LTC</th>
+            <td class="ltcusd"></td>
+            <th scope="col">BCH</th>
+            <td class="bchusd"></td>
+            <th scope="col">BTC</th>
+            <td class="btcusd"></td>
+            <th scope="col">ETH</th>
+            <td class="ethusd"></td>
+            <th scope="col">XRP</th>
+            <td class="xrpusd"></td>
+            <th scope="col">LTC</th>
+            <td class="ltcusd"></td>
+            <th scope="col">BCH</th>
+            <td class="bchusd"></td>
+          </table>
+        
+        </marquee>
+        <h1 class="text-center">Historical chart of BTC</h1>
+        
+        <div class="text-center m-1">
+          <button type="button" name="load_data" id="load_data1" class="btn btn-info m-2">Sept 2019</button>
+          <button type="button" name="load_data" id="load_data2" class="btn btn-info m-2">Oct 2019</button>
+          <button type="button" name="load_data" id="load_data3" class="btn btn-info m-2">Nov 2019</button>
+          <button type="button" name="load_data" id="load_data4" class="btn btn-info m-2">Dec 2019</button>
         </div>
+    
+    <!-- /#page-content-wrapper -->
+    <!--Card 1-2-->
+<div class="card-deck mt-2">
+ 
+  <div class="card">
+    
+    <div class="card-body">
+      <h5 class="card-title">BTC High/Low</h5>
+      <p class="card-text" id="chart1"></p>
+     
+    </div>
+  </div>
+  <div class="card">
+
+    <div class="card-body">
+      <h5 class="card-title">BTC Open/Close</h5>
+    <p class="card-text" id="chart2"></p>
+    </div>
+  </div>
+</div>
+  <!--Card 3-4 -->
+<div class="card-deck mt-2">
+  
+  <div class="card">
+   
+    <div class="card-body">
+      <h5 class="card-title">BTC Low</h5>
+    <p class="card-text" id="chart3"></p></div>
+  </div>
+
+  <div class="card">
+    
+    <div class="card-body">
+      <h5 class="card-title">BTC High</h5>
+    <p class="card-text" id="chart4"></p></div>
+  </div>
+</div>
+  <!--Card 5-6 -->
+    <div class="card-deck mt-2">
+     
+      <div class="card">
+        
+        <div class="card-body">
+          <h5 class="card-title">BTC Open</h5>
+        <p class="card-text" id="chart5"></p></div>
+      </div>
+      <div class="card">
        
-       </div>
-        <div class="card">
-          
-          <div class="card-body">
-            <h5 class="card-title">BTC Open/Close</h5><div class="btn-group">
-              
-               
-              </div>
-            <div id="mychart2">
-          </div>
-          
-        </div>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+        <p class="card-text" id="chart6"></p></div>
       </div>
     </div>
-    <!-- /#page-content-wrapper -->
 </div>
   </div>
   </div>
@@ -143,17 +216,25 @@
       ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
   
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script><script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
   <script src="js/vendor/popper.min.js"></script>
   <script src="chart/addclass.js"></script>
-  
+   
   <!-- Icons -->
   <script src="js/bootstrap.js"></script>
   
   <!-- Graphs -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-  <script src="js/chart/create-graph.js"></script>
+  <script src="/chart/create-graph.js"></script>
+  <!--Charts-->
+  <script src="chart/chart9.js"></script>
+  <script src="chart/chart10.js"></script>
+  <script src="chart/chart11.js"></script>
+  <script src="chart/chart12.js"></script>
+
+
   <!-- Menu Toggle Script -->
  
      
@@ -167,7 +248,10 @@
 
 
       </script>
-    <script src="js/darkswitch.js"></script>
+<!--ticker.js--->
+<script src="chart/ticker.js"></script>
+
+  <script src="js/darkswitch.js"></script>
   
 
 </body>
