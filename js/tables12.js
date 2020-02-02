@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('#load_data12').click(function () {
         $.ajax({
-            url: "data/bit12.csv",
+            url: "data/b12.csv",
             dataType: "text",
             success: function (data) {
                 var btc_data = data.split(/\r?\n|\r/);
