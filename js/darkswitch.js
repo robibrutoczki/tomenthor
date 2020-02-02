@@ -5,4 +5,3 @@ $("#darkSwitch").click(function (b) {
 
 });
 
-console.log("hello");

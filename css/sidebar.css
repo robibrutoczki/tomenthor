@@ -67,9 +67,10 @@ display: none;
 
 
 
-  .card{   background-color: rgb(129, 129, 136);
+.card{   background-color: rgb(129, 129, 136);
            border-color: rgb(27, 17, 17);
            border-radius: 15px;
+          
        }
 
 .card-img-top{border-color: cadetblue;

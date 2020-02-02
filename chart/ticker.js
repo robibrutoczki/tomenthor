@@ -1,5 +1,5 @@
 // ETHUSD
-
+setInterval("ticker()", 30000);
 function ticker() {
     $.ajax({
         url: "https://www.bitstamp.net/api/v2/ticker/ethusd/",
@@ -23,7 +23,7 @@ function ticker() {
 ticker(); 
 
 // XRPUSD
-
+setInterval("ticker2()", 30000);
 function ticker2() {
     $.ajax({
         url: "https://www.bitstamp.net/api/v2/ticker/xrpusd/",
@@ -42,7 +42,7 @@ function ticker2() {
 ticker2();
 
 // LTCUSD
-
+setInterval("ticker3()", 30000);
 function ticker3() {
     $.ajax({
         url: "https://www.bitstamp.net/api/v2/ticker/ltcusd/",
@@ -61,7 +61,7 @@ function ticker3() {
 ticker3(); 
 
 // BCHUSD
-
+setInterval("ticker4()", 30000);
 function ticker4() {
     $.ajax({
         url: "https://www.bitstamp.net/api/v2/ticker/bchusd/",
@@ -80,7 +80,7 @@ function ticker4() {
 ticker4(); 
 
 // BTCUSD
-
+setInterval("ticker5()", 30000);
 function ticker5() {
     $.ajax({
         url: "https://www.bitstamp.net/api/ticker",
@@ -102,7 +102,7 @@ function ticker5() {
 ticker5(); 
 
 // BTCEUR
-
+setTimeout("ticker6()", 30000);
 function ticker6() {
 $.ajax({
     url: "https://www.bitstamp.net/api/v2/ticker/btceur/",
