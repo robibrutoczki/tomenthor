@@ -2,7 +2,7 @@
  * Parse the data and create a graph with the data.
  */
 $(document).ready(function () {
-    $('#load_data1')
+    $('#load_data1').ready(
 
         function parseData(createGraph) {
             Papa.parse("data/b9.csv", {
