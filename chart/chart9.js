@@ -2,7 +2,7 @@
  * Parse the data and create a graph with the data.
  */
 $(document).ready(function () {
-    $('#load_data1').ready(function () {
+    $('#load_data1').click(function () {
 
         function parseData(createGraph) {
             Papa.parse("data/b9.csv", {
@@ -33,7 +33,7 @@ $(document).ready(function () {
 
 
                 bindto: '#chart1', padding: {
-                    left: 30,
+                    left: 40,
                     right: 30
                 },
                 point: {
@@ -43,9 +43,12 @@ $(document).ready(function () {
                 data: {
                     columns: [
                         high, low
-                    ], type: 'spline',
+                    ],
+                     type: 'area-spline'
 
-                }, grid: {
+                }, color: {
+                    pattern: ['#ed2913','#1375ed']
+                },grid: {
                     x: {
                         show: true
                     },
@@ -67,6 +70,7 @@ $(document).ready(function () {
                         }
                     }
                 },
+                
                 zoom: {
                     enabled: true
                 },
@@ -107,7 +111,7 @@ $(document).ready(function () {
 
             var chart = c3.generate({
                 bindto: '#chart3', padding: {
-                    left: 30,
+                    left: 40,
                     right: 30
                 },
                 point: {
@@ -117,11 +121,11 @@ $(document).ready(function () {
                 data: {
                     columns: [
                         low
-                    ]
+                    ], type: 'area-spline',
                 },
                 axis: {
                     x: {
-                        type: 'category',
+                       
                         categories: years,
                         tick: {
                             multiline: false,
@@ -130,6 +134,8 @@ $(document).ready(function () {
                             }
                         }
                     }
+                }, subchart: {
+                    show: true
                 },
                 zoom: {
                     enabled: true
@@ -204,7 +210,7 @@ $(document).ready(function () {
             });
 
             var chart = c3.generate({
-                bindto: '#chart6',
+                bindto: '#chart6', 
 
                 data: {
                     columns: [

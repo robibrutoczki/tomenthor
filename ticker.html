@@ -38,7 +38,7 @@
   <div class="list-group list-group-flush" id="list">
     <a href="index.html" class="list-group-item border-bottom list-group-item-action"><i class="fab fa-artstation">
       </i>  About</a>
-    <a href="ticker.html" class="list-group-item border-bottom list-group-item-action "><i class="fab fa-btc"> </i> BTC
+    <a href="ticker.html" id="side" class="list-group-item border-bottom list-group-item-action "><i class="fab fa-btc"> </i> BTC
       tickers</a>
     <a href="table.html" class="list-group-item border-bottom list-group-item-action "><i class="fas fa-table">
       </i> Tables</a>
@@ -96,46 +96,47 @@
         </div>
       </nav>
       <!---End of Navbar-->
-      <!--MARQUEE-->
-        <h1 class="ml-4">Tickers</h1>
+      <!--MARQUEE--><marquee>
+        <table class="table">
+      
+          <th scope="col">BTC</th>
+          <td class="btcusd"></td>
+          <th scope="col">ETH</th>
+          <td class="ethusd"></td>
+          <th scope="col">XRP</th>
+          <td class="xrpusd"></td>
+          <th scope="col">LTC</th>
+          <td class="ltcusd"></td>
+          <th scope="col">BCH</th>
+          <td class="bchusd"></td>
+          <th scope="col">BTC</th>
+          <td class="btcusd"></td>
+          <th scope="col">ETH</th>
+          <td class="ethusd"></td>
+          <th scope="col">XRP</th>
+          <td class="xrpusd"></td>
+          <th scope="col">LTC</th>
+          <td class="ltcusd"></td>
+          <th scope="col">BCH</th>
+          <td class="bchusd"></td>
+          <th scope="col">BTC</th>
+          <td class="btcusd"></td>
+          <th scope="col">ETH</th>
+          <td class="ethusd"></td>
+          <th scope="col">XRP</th>
+          <td class="xrpusd"></td>
+          <th scope="col">LTC</th>
+          <td class="ltcusd"></td>
+          <th scope="col">BCH</th>
+          <td class="bchusd"></td>
+        </table>
+      
+      </marquee>
+       
         
-        <marquee>
-              <table class="table">
-                
-             <th scope="col">BTC</th>
-             <td class="btcusd"></td>
-             <th scope="col">ETH</th>
-             <td class="ethusd"></td>
-             <th scope="col">XRP</th>
-             <td class="xrpusd"></td>
-             <th scope="col">LTC</th>
-             <td class="ltcusd"></td>
-             <th scope="col">BCH</th>
-             <td class="bchusd"></td>
-             <th scope="col">BTC</th>
-              <td class="btcusd"></td>
-              <th scope="col">ETH</th>
-              <td class="ethusd"></td>
-              <th scope="col">XRP</th>
-              <td class="xrpusd"></td>
-              <th scope="col">LTC</th>
-              <td class="ltcusd"></td>
-              <th scope="col">BCH</th>
-              <td class="bchusd"></td>
-              <th scope="col">BTC</th>
-              <td class="btcusd"></td>
-              <th scope="col">ETH</th>
-              <td class="ethusd"></td>
-              <th scope="col">XRP</th>
-              <td class="xrpusd"></td>
-              <th scope="col">LTC</th>
-              <td class="ltcusd"></td>
-              <th scope="col">BCH</th>
-              <td class="bchusd"></td>
-            </table>
-          
-         </marquee>
+       
     <!--End of MARQUEE-->
+    <h1 class="mt-0 mb-3 text-center">Tickers</h1>
 <div class="container-fluid">
       <!-- CARDS -->
       <div class="card-deck">
@@ -143,7 +144,7 @@
           <!--BTC/USD ticker-->
           <div class="card-body">
             <h5 class="card-title">Bitcoin ticker:</h5>
-            <table class="table table-dark table-hover table-outline-light ">
+            <table class="table table-c table-hover table-outline-light ">
               <thead>
                 <tr>
                   <th scope="col">#</th>
@@ -180,7 +181,7 @@
           <!--BTC/USD ticker-->
           <div class="card-body">
             <h5 class="card-title">BTC/Euro ticker:</h5>
-            <table class="table table-dark table-hover table-outline-light ">
+            <table class="table table-c table-hover table-outline-light ">
               <thead>
                 <tr>
                   <th scope="col">#</th>
@@ -215,7 +216,7 @@
           <!--Eth/USD ticker-->
           <div class="card-body">
             <h5 class="card-title">Ethereum ticker:</h5>
-            <table class="table table-dark table-hover table-outline-light ">
+            <table class="table table-c table-hover table-outline-light ">
               <thead>
                 <tr>
                   <th scope="col">#</th>
@@ -248,12 +249,123 @@
       <!-- /#page-content-wrapper -->
     </div>
   </div>
-</div>
-</div>
-</div>
-</div>
- 
 
+  <!-- Secon deck of cards -->
+
+  <div class="card-deck mt-3">
+    <div class="card">
+      <!--BTC/USD ticker-->
+      <div class="card-body">
+        <h5 class="card-title">Litecoin ticker:</h5>
+        <table class="table table-c table-hover table-outline-light ">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">LTC/USD</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Bid :</th>
+              <td class="ltcusd"></td>
+
+
+            </tr>
+            <tr>
+              <th scope="row">Ask :</th>
+              <td id="ltcbuy"></td>
+
+
+            </tr>
+            <tr>
+              <th scope="row">Vol :</th>
+              <td class="volumeltc"></td>
+
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+   
+    <!--XRP/USD ticker-->
+    <div class="card">
+      
+      <div class="card-body">
+        <h5 class="card-title">XRP ticker:</h5>
+        <table class="table table-c table-hover table-outline-light ">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">XRP/USD</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Bid :</th>
+              <td class="xrpusd"></td>
+
+
+            </tr>
+            <tr>
+              <th scope="row">Ask :</th>
+              <td class="xrpbuy"></td>
+
+
+            </tr>
+            <tr>
+              <th scope="row">Vol :</th>
+              <td id="volumexrp"></td>
+
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+    <div class="card">
+      <!--BCH/USD ticker-->
+      <div class="card-body">
+        <h5 class="card-title">BitcoinCash ticker:</h5>
+        <table class="table table-c table-hover table-outline-light ">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">BCH/USD</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Bid :</th>
+              <td class="bchusd"></td>
+
+
+            </tr>
+            <tr>
+              <th scope="row">Ask :</th>
+              <td id="buybch"></td>
+
+
+            </tr>
+            <tr>
+              <th scope="row">Vol :</th>
+              <td id="volumebch"></td>
+
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- /#page-content-wrapper -->
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
 <!-- /#wrapper -->
 
           <!-- Bootstrap core JavaScript -->

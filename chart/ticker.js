@@ -32,10 +32,10 @@ function ticker2() {
         success: function (data, textStatus, jqXHR) {
           
             $('.xrpusd').html(data.ask);
-           
+            $('.xrpbuy').html(data.bid);
+            $('#volumexrp').html(parseFloat(data.volume).toFixed(2))
             ticker2();
         }
-
     })
 
 };
@@ -51,7 +51,8 @@ function ticker3() {
         success: function (data, textStatus, jqXHR) {
           
             $('.ltcusd').html(data.ask);
-
+            $('#ltcbuy').html(data.bid);
+            $('.volumeltc').html(parseFloat(data.volume).toFixed(2))
             ticker3();
         }
 
@@ -70,7 +71,8 @@ function ticker4() {
         success: function (data, textStatus, jqXHR) {
             
             $('.bchusd').html(data.ask);
-
+            $('#buybch').html(data.bid);
+            $('#volumebch').html(parseFloat(data.volume).toFixed(2))
             ticker4();
         }
 

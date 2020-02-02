@@ -1,5 +1,6 @@
 
-
+body{background-color:#8e8e8e; ;
+color:#726B5F ;}
 
 
 ::-webkit-scrollbar {
@@ -61,17 +62,25 @@ display: none;
     margin-left: -15rem;
   }
 }
-.black{
-   background-color: #0e1113;
-   color:rgb(218, 220, 230);}
+.container-fluid,
+  .card-deck{background-color:#eee;;}
+  .card{background-color:#c3c3c3;
+    color:#2e2b23}
 
+ #side{
+    background-color:#c3c3c3;
+    color: #fff;}/* actual page indicator on sidebar */
 
+   
 
-.card{   background-color: rgb(129, 129, 136);
-           border-color: rgb(27, 17, 17);
-           border-radius: 15px;
-          
-       }
+marquee{
+      text-align: center;
+      width:100%;
+      height: 45px;
+      margin-bottom: 60px;;
+      background-color:#b8b7b4 ;}
 
-.card-img-top{border-color: cadetblue;
-  border-radius: 15px;}
+      
+.table-c{
+         background-color:#66635c;
+        color: #fff;}

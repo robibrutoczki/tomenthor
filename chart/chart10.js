@@ -27,17 +27,27 @@ $(document).ready(function () {
                 open.push(data[i][2]);
                 close.push(data[i][5]);
             }
-            
+
+
             var chart = c3.generate({
 
 
-                bindto: '#chart1',
+                bindto: '#chart1', padding: {
+                    left: 40,
+                    right: 30
+                },
+                point: {
+                    show: false
+                },
 
                 data: {
                     columns: [
                         high, low
-                    ], type: 'spline',
+                    ],
+                    type: 'area-spline'
 
+                }, color: {
+                    pattern: ['#ed2913', '#1375ed']
                 }, grid: {
                     x: {
                         show: true
@@ -46,7 +56,6 @@ $(document).ready(function () {
                         show: true
                     }
                 }, subchart: {
-                    type: 'line',
                     show: true
                 },
                 axis: {
@@ -61,6 +70,7 @@ $(document).ready(function () {
                         }
                     }
                 },
+
                 zoom: {
                     enabled: true
                 },
@@ -78,9 +88,6 @@ $(document).ready(function () {
                         open, close
                     ], type: 'spline',
 
-                }, subchart: {
-                    type: 'line',
-                    show: true
                 },
                 axis: {
                     x: {
@@ -103,16 +110,22 @@ $(document).ready(function () {
             });
 
             var chart = c3.generate({
-                bindto: '#chart3',
+                bindto: '#chart3', padding: {
+                    left: 40,
+                    right: 30
+                },
+                point: {
+                    show: false
+                },
 
                 data: {
                     columns: [
                         low
-                    ]
+                    ], type: 'area-spline',
                 },
                 axis: {
                     x: {
-                        type: 'category',
+
                         categories: years,
                         tick: {
                             multiline: false,
@@ -121,6 +134,8 @@ $(document).ready(function () {
                             }
                         }
                     }
+                }, subchart: {
+                    show: true
                 },
                 zoom: {
                     enabled: true
@@ -137,6 +152,8 @@ $(document).ready(function () {
                     columns: [
                         high
                     ]
+                }, subchart: {
+                    show: true
                 },
                 axis: {
                     x: {
@@ -205,6 +222,9 @@ $(document).ready(function () {
                     }
                     // or
                     //width: 100 // this makes bar width 100px
+                }, subchart: {
+                    type: 'line',
+                    show: true
                 },
                 axis: {
                     x: {
@@ -226,6 +246,7 @@ $(document).ready(function () {
                 }
             });
         }
+
 
 
         parseData(createGraph);
