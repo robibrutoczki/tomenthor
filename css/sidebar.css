@@ -1,6 +1,7 @@
 
-body{background-color:#8e8e8e; ;
-color:#726B5F ;}
+body{
+  background-color:#8e8e8e; ;
+  color:#726B5F ;}
 
 
 ::-webkit-scrollbar {
@@ -47,13 +48,16 @@ display: none;
   #wrapper.toggled #sidebar-wrapper {
     margin-left: 0
   }
+  
 }
 @media (m-width: 768px) {
   #sidebar-wrapper {
     margin-left: 0;
+
   }
 
-  #page-content-wrapper {
+ 
+ #page-content-wrapper {
     min-width: 0;
     width: 100%;
   }
@@ -62,6 +66,7 @@ display: none;
     margin-left: -15rem;
   }
 }
+
 .container-fluid,
   .card-deck{background-color:#eee;;}
   .card{background-color:#c3c3c3;
@@ -84,3 +89,9 @@ marquee{
 .table-c{
          background-color:#66635c;
         color: #fff;}
+.dark{background-color:#c3c3c3;
+    color:#2e2b23}
+.black{
+  background-color: black;
+  color: cornsilk;
+  border-color: darkblue;}
