@@ -56,7 +56,12 @@ display: none;
 
   }
 
- 
+#gh-repo-data{width:80%;}
+
+.clearrfix{width: 100%;}
+
+.center-form{width: 80%;}
+
  #page-content-wrapper {
     min-width: 0;
     width: 100%;
@@ -68,7 +73,7 @@ display: none;
 }
 
 .container-fluid,
-  .card-deck{background-color:#eee;;}
+  
   .card{background-color:#c3c3c3;
     color:#2e2b23}
 
@@ -76,21 +81,72 @@ display: none;
     background-color:#c3c3c3;
     color: #fff;}/* actual page indicator on sidebar */
 
-   
+  /* MARQUEE */ 
 
-marquee{
-      text-align: center;
-      width:100%;
-      height: 45px;
-      margin-bottom: 60px;;
-      background-color:#b8b7b4 ;}
+   .marquee {
+            height: 50px;
+            overflow: hidden;
+            position: relative;
+            background: #fefefe;
+            color: #333;
+            border: 1px solid #4a4a4a;
+        }
+        
+        .marquee table {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            line-height: 50px;
+            text-align: center;
+            -moz-transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+            -moz-animation: scroll-left 20s linear infinite;
+            -webkit-animation: scroll-left 20s linear infinite;
+            animation: scroll-left 20s linear infinite;
+        }
+        
+        @-moz-keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+            }
+        }
+        
+        @-webkit-keyframes scroll-left {
+            0% {
+                -webkit-transform: translateX(100%);
+            }
+            100% {
+                -webkit-transform: translateX(-100%);
+            }
+        }
+        
+        @keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+            }
+        }
 
       
 .table-c{
-         background-color:#66635c;
-        color: #fff;}
-.dark{background-color:#c3c3c3;
-    color:#2e2b23}
+  background-color:#66635c;
+  color: #fff;}
+
+.dark{
+  background-color:#c3c3c3;
+  color:#2e2b23}
+
 .black{
   background-color: black;
   color: cornsilk;
