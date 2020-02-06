@@ -12,10 +12,10 @@ display: none;
 #sidebar-wrapper {
   min-height: 100vh;
   margin-left: -15rem;
-  -webkit-transition: margin .25s ease-out;
-  -moz-transition: margin .25s ease-out;
-  -o-transition: margin .25s ease-out;
-  transition: margin .25s ease-out;
+  -webkit-transition: margin .3s ease-out;
+  -moz-transition: margin .3s ease-out;
+  -o-transition: margin .3s ease-out;
+  transition: margin .3s ease-out;
 }
 
 #sidebar-wrapper .sidebar-heading {
@@ -55,14 +55,13 @@ display: none;
     margin-left: 0;
 
   }
+/* Github */
 
-#gh-repo-data{width:80%;}
 
-.clearrfix{width: 80%;}
 
-.center-form{width: 80%;}
+.clearrfix{width: 100%;}
 
- #page-content-wrapper {
+#page-content-wrapper {
     min-width: 0;
     width: 100%;
   }
@@ -87,9 +86,9 @@ display: none;
             height: 50px;
             overflow: hidden;
             position: relative;
-            background: #fefefe;
-            color: #333;
-            border: 1px solid #4a4a4a;
+            background:#c3c3c3;
+            color: #000;
+          
         }
         
         .marquee table {
@@ -102,9 +101,9 @@ display: none;
             -moz-transform: translateX(100%);
             -webkit-transform: translateX(100%);
             transform: translateX(100%);
-            -moz-animation: scroll-left 20s linear infinite;
-            -webkit-animation: scroll-left 20s linear infinite;
-            animation: scroll-left 20s linear infinite;
+            -moz-animation: scroll-left 30s linear infinite;
+            -webkit-animation: scroll-left 30s linear infinite;
+            animation: scroll-left 30s linear infinite;
         }
         
         @-moz-keyframes scroll-left {
@@ -151,3 +150,4 @@ display: none;
   background-color: black;
   color: cornsilk;
   border-color: darkblue;}
+   

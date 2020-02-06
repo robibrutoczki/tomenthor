@@ -1,60 +1,63 @@
 ## Cryptocurrency Dashboard
 
-## Overview of Project
+## The aim of the Project
 
-From all Canada's crime reports that have occurred in different provinces every year my Crime Data Dashboard gives an insight on the Top 5 crimes that has occurred in Canada during the year 2008 to 2012 which are most likely to impact the inhabitants in Canada.
+Cryptocurrency Dashboard gives an insight on some of the "main" cryptocurrencies. This is kind of an educational dashboard. The user can learn about all aspect of trading cryptocurrencies.
 
-Here I have developed a visualization system using data from Ontario's Data Catalogue.
+[IMAGE](https://github.com/robibrutoczki/tomenthor/tree/master/img/forreadme.png)
 
-[![IMAGE](https://github.com/Code-Institute-Submissions/second-milestone-project-1/raw/master/assets/images/dashboard.jpg)](https://github.com/Code-Institute-Submissions/second-milestone-project-1/blob/master/assets/images/dashboard.jpg)
-
-## User experience (UX) design
+## User experience 
 
 The following features have been added to make the user experience interactive
 
-- The Crime Data Dashboard is a single page application with a fixed top nav bar.
-- It provides "at a glance" results for policing topic areas and allows users to click through each area to learn more through visualizations.
-- It is possible to navigate through the site using mouse or arrow keys.
-- The site provides graphs of various kinds which include Row Chart, Pie Chart, Bar Chart/Stack Charts , Number display and Select menu for refining search, thus giving a visualized information about the crime rate for years 2008- 2012 in Canada.
-- This charts are interactive in a way that it can be filtered based on any requirements of the client just on a click.
-- The web page also provide a Reset button to clear any filters applied to the webpage
-- A scrolling Top button appears on the right of the webpage which appears once the user scrolls down the page.
+- The Dashboard is a multi page website without "navbar" .instead I used a sidebar.
+
+- It provides many areas of Crypto trade and allows users to learn more about cryptocurrencies and historical data through data visualization
+
+- The Charts page provides historical charts .
+
+- This charts are interactive. User can choose between months,zoom in and out on charts,switch on and of data.
+
+- The website has a light and a dark mode,User can switch between modes with the 'Dark' button on the top right corner.
+
+- The website has no classical navbar, instead I used a sidebar on the left. It's hidden till the User click on the 'Dash' button on the top left corner. 
+
+  
 
 #### User Stories
 
-The various users of this Dash Board would be
+ Dash Board would be useful for :
 
-- Police Service
-- Crime Analyst
+- People who want to learn about Cryptocurrencies
+- People who want to know more about historical prices of Cryptocurrencies
+- People whom need a simple ticker to see real time price dat
 
-As any one of the users, he/she would be interested in finding information about the following
+The Dashboard could be a good base for a future trader who want to find out more about this exciting field of cryptocurrencies and trading them.
 
-- Crime rates recorded based on Year,Provinces and a specific Crime type
-- Total crimes reported per 100,000 inhabitants for each year or collectively.
-- From all the crimes reported which crime has the highest record reported.
-- Total crime in each province of Canada.
-- Statistics of individual crimes for each year and vice versa.
-- The graphs can portray different pieces of information to users when different options are selected or when filters are applied.
+## Wireframes 
 
-For a Crime Analyst the dashboard could encourage further investigation, research and study to the subject that is being displayed.
+Wireframes are made with [Balsamic Mockups3](https://balsamiq.com/)
 
-## Wireframes for Desktop and mobile version
+[Wireframes ](https://github.com/robibrutoczki/tomenthor/blob/master/Wireframe/wireframe.pdf)
 
-[Wireframes for Desktop Version](https://www.dropbox.com/s/9do41b7vp4l7avr/DesktopVersion1.jpg?dl=0)
-[Wireframes for Desktop Version Continue](https://www.dropbox.com/s/o4evmz3e46o8szt/DesktopVersion2.jpg?dl=0)
-[Wireframes fo Mobile Version](https://www.dropbox.com/s/x5nw1pabnu194ru/MobileVersion1.jpg?dl=0)
-[Wireframes for Mobile Version Continue](https://www.dropbox.com/s/irnyosfytfmdwr4/MobileVersion2.jpg?dl=0)
+[Wireframes ](https://github.com/robibrutoczki/tomenthor/tree/master/Wireframe)
+
+
 
 ## Features
 
-Following features have been implemented for ease of use
+Following features have been implemented for ease of use:
 
-- **Number Display**–Displays the total crimes reported per 100,000 inhabitants ,this value changes based on selection made using the year and crime selectors
-- **Year selector**- Provides a drop down for users to make a selection on the years(2008-2012) to fetch the crimes reported information.
-- **Crime Selector**- Provides select options for users for the different crime rates reported.
-- **Province Selector** - Drop down with the 10 provinces of Canada.
-- **Top 5 Offence Row Chart**- displays the individual crime record reported. This row chart can be filtered by clicking any crime. This would in turn act as a filter changing the other visualization on the page.
-- **Total crimes each year Bar chart**- This is a simple visualization displaying the total crimes reported each year.
+**Sidebar/navigation**- The Sidebar working as a navbar,hidden until user click on the 'Dash ' button. The Sidebar has seven buttons to help User to navigate between pages. On clicking on 'Dash' button the actual page is highlighted in the sidebar.
+
+***Note :*** every page has a real time ticker on the top of the pages for immediate info about the actual prices.
+
+- **About**–Displays six cards with information about cryptocurrencies,history,the idea of blockchain,the two main currencies: Bitcoin and Ethereum,Crypto wallets .Each card have some information and a read more button. On click on the button brings up a modal with a longer article to read and two buttons one to close the modal,one with a link to a Wikipedia page with the relevant information for further study.
+- **BTC tickers**- Displays six cards with a currency pair. Each pair have three lines,showing real-time data about the asking price and highest bid and the actual volume. Volume can be an indicator for price increase or decrease.   
+- **Tables**- Provides select options for users for different historical data tables. User can click on the button to show the relevant month. On load of the page it's shows 9/19 table. 
+- **Exchange** - Displays some basic info about the crypto exchange. User can click on the button to learn more. There are four cards provide further info about individual exchanges and a button with a link to the relevant exchange's website.
+- **Charts**- displays the individual crime record reported. This row chart can be filtered by clicking any crime. This would in turn act as a filter changing the other visualization on the page.
+- **Github**- This is a simple visualization displaying the total crimes reported each year.
 - **Reported Crimes each province Pie Chart**- This chart displayed the crimes reported in the 10 provinces in Canada.
 - **Stack Charts**- displays total crimes per category per year and vice versa
 - **Reset button** is provided to cancel out any filters made.

@@ -6,12 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+
   <title>Dashbord-Exchange</title>
+
   <!--Favicon-->
   <link rel="shortcut icon" type="image/png" href="img/en-fav.png" />
+
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom styles for this side -->
+
+  <!-- Custom style -->
   <link href="css/sidebar.css" rel="stylesheet">
   
   <!--Fontawesome-->
@@ -20,12 +24,13 @@
   
 </head>
 
-<body id="body" class="bg-light">
+<body id="body">
   <div class="d-flex" id="wrapper">
-    <!-- Sidebar -->
+
+  <!-- Sidebar -->
     <div class=" border-right" id="sidebar-wrapper">
       <div class="sidebar-heading">Dashboard</div>
-      <div class="list-group list-group-flush" id="list">
+       <div class="list-group list-group-flush" id="list">
         <a href="index.html" class="list-group-item border-bottom list-group-item-action"><i class="fab fa-artstation">
           </i> About</a>
         <a href="ticker.html" class="list-group-item border-bottom list-group-item-action "><i class="fab fa-btc"> </i>
@@ -45,19 +50,22 @@
           Contact</a>
       </div>
     </div>
-    <!-- /#sidebar-wrapper -->
-    <!-- Page Content -->
+  <!-- End of Sidebar-->
+
+<!-- Navbar -->
     <div id="page-content-wrapper">
       <nav class="navbar navbar-collapse  navbar-light border-bottom">
         <button class="btn btn-light border-dark" id="menu-toggle">Dash</button>
         <div class="custom-control  justify-content-end custom-switch"></div>
         <button class="btn btn-light border-dark" id="darkSwitch">Dark</button>
       </nav>
-      <!---End of Navbar-->
+<!---End of Navbar-->
+
+<!--Content-->
       <div class="container-fluid">
      
         <div class="marquee">
-          <table class="table">
+          <table class="table table-m">
             <tr>
             <th scope="col">BTC</th>
             <td class="btcusd"></td>
@@ -94,22 +102,22 @@
 
               <h1 class="mt-4 text-center">Crypto Exchange:</h1>
               <hr class="my-4">
-              <p class="card-text">A cryptocurrency exchange or a digital currency exchange (DCE) is a business that allows customers
+              <p class="card-text text-center">A cryptocurrency exchange or a digital currency exchange (DCE) is a business that allows customers
                 to trade
                 cryptocurrencies or digital currencies for other assets, such as conventional fiat money or other digital currencies.
                 A
                 cryptocurrency exchange can be a market maker that typically takes the bid-ask spreads as a transaction commission for
                 is service or, as a matching platform, simply charges fees.</p>
-              <a href="https://en.wikipedia.org/wiki/Cryptocurrency_exchange" target="_blank" class="btn btn-light border-dark">Learn
-                more..</a>
-              <p>Here is a few exaple:</p>
-              
-            
+                <p class="text-center">
+              <a  href="https://en.wikipedia.org/wiki/Cryptocurrency_exchange" target="_blank" class="btn btn-light border-dark">Learn
+                more..</a></p>
+              <p class="text-center">Here is a few exaple:</p>
               </div>
+      <!-- Cards -->        
               <div class="card-deck mt-3">
                 <div class="card">
                   <img class="card-img-top" src="img/Bittrexlogo.jpg" alt="bittrex logo">
-                  <div class="card-body">
+                  <div class="card-body text-center">
                     <h5 class="card-title">Bittrex</h5>
                     <p class="card-text">Bittrex Global provides a proven and secure platform for its customers to access the
                       opportunities of digital asset
@@ -119,9 +127,10 @@
                     <a href="https://global.bittrex.com/" target="_blank" class="btn btn-light border-dark">Bittrex</a>
                   </div>
                 </div>
+
                 <div class="card">
                   <img class="card-img-top" src="img/coinbaselogo.png" alt="Coinbase logo">
-                  <div class="card-body">
+                  <div class="card-body text-center">
                     <h5 class="card-title">Coinbase</h5>
                     <p class="card-text">Founded in June of 2012, Coinbase is a digital currency wallet and platform where merchants
                       and consumers can transact
@@ -129,9 +138,10 @@
                     <a href="https://www.coinbase.com/" target="_blank" class="btn btn-light border-dark">Coinbase</a>
                   </div>
                 </div>
+
                 <div class="card">
                   <img class="card-img-top" src="img/binance.jpg" alt="binance logo">
-                  <div class="card-body">
+                  <div class="card-body text-center">
                     <h5 class="card-title">Binance</h5>
                     <p class="card-text">Blockchain and crypto asset exchange
                       Delivering a secure, fast, and seamless trading experience, fueled by BNB.One of the biggest Crypto exchange in
@@ -139,10 +149,10 @@
                     <a href="https://www.binance.com/en" target="_blank" class="btn btn-light border-dark">Binance</a>
                   </div>
                 </div>
-                <!----->
+          
                 <div class="card">
                   <img class="card-img-top" src="img/Huobi-logo.jpg" alt="Huobi logo">
-                  <div class="card-body">
+                  <div class="card-body text-center">
                     <h5 class="card-title">Huobi</h5>
                     <p class="card-text">Introduction
                       Huobi Group is a leading global digital asset financial service provider. Upholding the idea of “empowering
@@ -153,32 +163,29 @@
                     <a href="https://www.huobi.com/en-us/" target="_blank" class="btn btn-light border-dark">Huobi</a>
                   </div>
                 </div>
-              
-                <!----->
               </div>
               </div>
               </div>
-              <!-- /#page-content-wrapper -->
-              
-              </div>
-              <!-- /#wrapper -->
-              
+       
+      <!--End of Cards-->
+
+    <!--End of Content-->
               <!-- Bootstrap core JavaScript -->
-              <script src="vendor/jquery/jquery.min.js"></script>
+             
               <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
               
-              <!-- Menu Toggle Script -->
+   <!-- Menu Toggle Script -->
               <script>
                 $("#menu-toggle").click(function (e) {
                   e.preventDefault();
                   $("#wrapper").toggleClass("toggled");
                 });
-
-
               </script>
-              <!--ticker.js--->
+              
+              <!-- ticker.js -->
               <script src="chart/ticker.js"></script>
-              <!--Theme JS-->
+
+              <!-- Theme JS -->
               <script src="js/darkswitch.js"></script>
               </body>
               

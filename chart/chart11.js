@@ -14,7 +14,7 @@ $(document).ready(function () {
         }
 
         function createGraph(data) {
-            var years = ["date"];
+            let years = ["date"];
             high = ["High"];
             low = ["Low"];
             open = ["Open"];

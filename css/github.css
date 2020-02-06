@@ -49,11 +49,10 @@ img {
   max-width: 100%;
 }
 
-
-
 /* page structure */
 
 #search-area {
+  
   display: block;
   max-width: 70%;
   margin: 0 auto;
