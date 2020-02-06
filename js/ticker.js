@@ -1,4 +1,6 @@
 // ETHUSD
+
+
 setInterval("ticker()", 30000);
 function ticker() {
     $.ajax({
