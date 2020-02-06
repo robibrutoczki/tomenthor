@@ -1,195 +1,172 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+  <meta content="" name="description">
+  <meta content="" name="author">
   <title>Dashbord-Exchange</title>
-<title>Dashboard-Github</title>
+  <!--Favicon-->
+  <link href="img/en-fav.png" rel="shortcut icon" type="image/png"><!-- Bootstrap core CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom style -->
+  <link href="css/sidebar.css" rel="stylesheet">
+  <link href="css/github.css" rel="stylesheet">
+  <!--Theme JS-->
 
-<!--Favicon-->
-<link rel="shortcut icon" type="image/png" href="img/en-fav.png" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+  <script src="js/github.js">
+  </script>
+  <!--Fontawesome-->
 
-<!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/97e327c4f9.js">
+  </script>
+  <!--Ticker.js-->
 
-<!-- Custom style -->
-<link href="css/sidebar.css" rel="stylesheet">
-<link href="css/github.css" rel="stylesheet">
-<!--Theme JS-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="js/github.js"></script>
-
-<!--Fontawesome-->
-<script src="https://kit.fontawesome.com/97e327c4f9.js" crossorigin="anonymous"></script>
-
-<!--Ticker.js-->
-<script src="js/ticker.js"></script>
+  <script src="js/ticker.js">
+  </script>
 </head>
 
 <body id="body">
   <div class="d-flex" id="wrapper">
-
-  <!-- Sidebar -->
+    <!-- Sidebar -->
     <div class=" border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">Dashboard</div>
-       <div class="list-group list-group-flush" id="list">
-        <a href="index.html" class="list-group-item border-bottom list-group-item-action"><i class="fab fa-artstation">
-          </i> About</a>
-        <a href="ticker.html" class="list-group-item border-bottom list-group-item-action "><i class="fab fa-btc"> </i>
-          BTC
-          tickers</a>
-        <a href="table.html" class="list-group-item border-bottom list-group-item-action "><i class="fas fa-table">
-          </i> Tables</a>
-        <a href="exchange.html" id="side" class="list-group-item border-bottom list-group-item-action "><i
-            class="fas fa-exchange-alt"> </i> Excange</a>
-        <a href="charts.html" class="list-group-item border-bottom list-group-item-action "><i class="fas fa-chart-bar">
-          </i> Charts</a>
-        <a href="github.html" class="list-group-item border-bottom list-group-item-action "><i
-            class="fab fa-github-square">
-          </i> Github</a>
-        <a href="http://robbieb.co.uk/#contact" target="_blank"
-          class="list-group-item border-bottom list-group-item-action "><i class="fas fa-user-circle"></i>
-          Contact</a>
+      <div class="sidebar-heading">
+        Dashboard
       </div>
-    </div>
-  <!-- End of Sidebar-->
-
-<!-- Navbar -->
+      <div class="list-group list-group-flush" id="list">
+        <a class="list-group-item border-bottom list-group-item-action" href="index.html"><i
+            class="fab fa-artstation"></i> About</a> <a class="list-group-item border-bottom list-group-item-action"
+          href="ticker.html"><i class="fab fa-btc"></i> BTC tickers</a> <a
+          class="list-group-item border-bottom list-group-item-action" href="table.html"><i class="fas fa-table"></i>
+          Tables</a> <a class="list-group-item border-bottom list-group-item-action" href="exchange.html" id="side"><i
+            class="fas fa-exchange-alt"></i> Excange</a> <a class="list-group-item border-bottom list-group-item-action"
+          href="charts.html"><i class="fas fa-chart-bar"></i> Charts</a> <a
+          class="list-group-item border-bottom list-group-item-action" href="github.html"><i
+            class="fab fa-github-square"></i> Github</a> <a class="list-group-item border-bottom list-group-item-action"
+          href="http://robbieb.co.uk/#contact" target="_blank"><i class="fas fa-user-circle"></i> Contact</a>
+      </div>
+    </div><!-- End of Sidebar-->
+    <!-- Navbar -->
     <div id="page-content-wrapper">
-      <nav class="navbar navbar-collapse  navbar-light border-bottom">
+      <nav class="navbar navbar-collapse navbar-light border-bottom">
         <button class="btn btn-light border-dark" id="menu-toggle">Dash</button>
-        <div class="custom-control  justify-content-end custom-switch"></div>
-        <button class="btn btn-light border-dark" id="darkSwitch">Dark</button>
+        <div class="custom-control justify-content-end custom-switch"></div><button class="btn btn-light border-dark"
+          id="darkSwitch">Dark</button>
       </nav>
-<!---End of Navbar-->
-
-<!--Content-->
+      <!---End of Navbar-->
+      <!--Content-->
       <div class="container-fluid">
-     
         <div class="marquee">
           <table class="table table-m">
             <tr>
-            <th scope="col">BTC</th>
-            <td class="btcusd"></td>
-            <th scope="col">ETH</th>
-            <td class="ethusd"></td>
-            <th scope="col">XRP</th>
-            <td class="xrpusd"></td>
-            <th scope="col">LTC</th>
-            <td class="ltcusd"></td>
-            <th scope="col">BCH</th>
-            <td class="bchusd"></td>
-            <th scope="col">BTC</th>
-            <td class="btcusd"></td>
-            <th scope="col">ETH</th>
-            <td class="ethusd"></td>
-            <th scope="col">XRP</th>
-            <td class="xrpusd"></td>
-            <th scope="col">LTC</th>
-            <td class="ltcusd"></td>
-            <th scope="col">BCH</th>
-            <td class="bchusd"></td>
-            <th scope="col">BTC</th>
-            <td class="btcusd"></td>
-            <th scope="col">ETH</th>
-            <td class="ethusd"></td>
-            <th scope="col">XRP</th>
-            <td class="xrpusd"></td>
-            <th scope="col">LTC</th>
-            <td class="ltcusd"></td>
-            <th scope="col">BCH</th>
-            <td class="bchusd"></td></tr>
+              <th scope="col">BTC</th>
+              <td class="btcusd"></td>
+              <th scope="col">ETH</th>
+              <td class="ethusd"></td>
+              <th scope="col">XRP</th>
+              <td class="xrpusd"></td>
+              <th scope="col">LTC</th>
+              <td class="ltcusd"></td>
+              <th scope="col">BCH</th>
+              <td class="bchusd"></td>
+              <th scope="col">BTC</th>
+              <td class="btcusd"></td>
+              <th scope="col">ETH</th>
+              <td class="ethusd"></td>
+              <th scope="col">XRP</th>
+              <td class="xrpusd"></td>
+              <th scope="col">LTC</th>
+              <td class="ltcusd"></td>
+              <th scope="col">BCH</th>
+              <td class="bchusd"></td>
+              <th scope="col">BTC</th>
+              <td class="btcusd"></td>
+              <th scope="col">ETH</th>
+              <td class="ethusd"></td>
+              <th scope="col">XRP</th>
+              <td class="xrpusd"></td>
+              <th scope="col">LTC</th>
+              <td class="ltcusd"></td>
+              <th scope="col">BCH</th>
+              <td class="bchusd"></td>
+            </tr>
           </table>
         </div>
+        <h1 class="mt-4 text-center">Crypto Exchange:</h1>
+        <hr class="my-4">
+        <p class="card-text text-center">A cryptocurrency exchange or a digital currency exchange (DCE) is a business
+          that allows customers to trade cryptocurrencies or digital currencies for other assets, such as conventional
+          fiat money or other digital currencies. A cryptocurrency exchange can be a market maker that typically takes
+          the bid-ask spreads as a transaction commission for is service or, as a matching platform, simply charges
+          fees.</p>
+        <p class="text-center"><a class="btn btn-light border-dark"
+            href="https://en.wikipedia.org/wiki/Cryptocurrency_exchange" target="_blank">Learn more..</a></p>
+        <p class="text-center">Here is a few exaple:</p>
+      </div><!-- Cards -->
+      <div class="card-deck mt-3">
+        <div class="card">
+          <img alt="bittrex logo" class="card-img-top" src="img/Bittrexlogo.jpg">
+          <div class="card-body text-center">
+            <h5 class="card-title">Bittrex</h5>
+            <p class="card-text">Bittrex Global provides a proven and secure platform for its customers to access the
+              opportunities of digital asset trading. Built on Bittrex’s cutting-edge technology, Bittrex Global
+              provides an institutional grade experience for professional and novice customers alike.</p><a
+              class="btn btn-light border-dark" href="https://global.bittrex.com/" target="_blank">Bittrex</a>
+          </div>
+        </div>
+        <div class="card">
+          <img alt="Coinbase logo" class="card-img-top" src="img/coinbaselogo.png">
+          <div class="card-body text-center">
+            <h5 class="card-title">Coinbase</h5>
+            <p class="card-text">Founded in June of 2012, Coinbase is a digital currency wallet and platform where
+              merchants and consumers can transact with new digital currencies like bitcoin, ethereum, and
+              litecoin.They're based in San Francisco, California.</p><a class="btn btn-light border-dark"
+              href="https://www.coinbase.com/" target="_blank">Coinbase</a>
+          </div>
+        </div>
+        <div class="card">
+          <img alt="binance logo" class="card-img-top" src="img/binance.jpg">
+          <div class="card-body text-center">
+            <h5 class="card-title">Binance</h5>
+            <p class="card-text">Blockchain and crypto asset exchange Delivering a secure, fast, and seamless trading
+              experience, fueled by BNB.One of the biggest Crypto exchange in the world.</p><a
+              class="btn btn-light border-dark" href="https://www.binance.com/en" target="_blank">Binance</a>
+          </div>
+        </div>
+        <div class="card">
+          <img alt="Huobi logo" class="card-img-top" src="img/Huobi-logo.jpg">
+          <div class="card-body text-center">
+            <h5 class="card-title">Huobi</h5>
+            <p class="card-text">Introduction Huobi Group is a leading global digital asset financial service provider.
+              Upholding the idea of “empowering financial services and liberating global wealth” as our mission and
+              “putting users first” as our concept, Huobi Group is committed to providing secure, professional, credible
+              and quality services for its global users.</p><a class="btn btn-light border-dark"
+              href="https://www.huobi.com/en-us/" target="_blank">Huobi</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End of Cards-->
+  <!-- Bootstrap JavaScript -->
+  <script src="js/jquery.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+  </script> <!-- Menu Toggle Script -->
 
-              <h1 class="mt-4 text-center">Crypto Exchange:</h1>
-              <hr class="my-4">
-              <p class="card-text text-center">A cryptocurrency exchange or a digital currency exchange (DCE) is a business that allows customers
-                to trade
-                cryptocurrencies or digital currencies for other assets, such as conventional fiat money or other digital currencies.
-                A
-                cryptocurrency exchange can be a market maker that typically takes the bid-ask spreads as a transaction commission for
-                is service or, as a matching platform, simply charges fees.</p>
-                <p class="text-center">
-              <a  href="https://en.wikipedia.org/wiki/Cryptocurrency_exchange" target="_blank" class="btn btn-light border-dark">Learn
-                more..</a></p>
-              <p class="text-center">Here is a few exaple:</p>
-              </div>
-      <!-- Cards -->        
-              <div class="card-deck mt-3">
-                <div class="card">
-                  <img class="card-img-top" src="img/Bittrexlogo.jpg" alt="bittrex logo">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Bittrex</h5>
-                    <p class="card-text">Bittrex Global provides a proven and secure platform for its customers to access the
-                      opportunities of digital asset
-                      trading. Built on Bittrex’s cutting-edge technology, Bittrex Global provides an institutional grade experience
-                      for
-                      professional and novice customers alike.</p>
-                    <a href="https://global.bittrex.com/" target="_blank" class="btn btn-light border-dark">Bittrex</a>
-                  </div>
-                </div>
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+  <!--Theme JS-->
 
-                <div class="card">
-                  <img class="card-img-top" src="img/coinbaselogo.png" alt="Coinbase logo">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Coinbase</h5>
-                    <p class="card-text">Founded in June of 2012, Coinbase is a digital currency wallet and platform where merchants
-                      and consumers can transact
-                      with new digital currencies like bitcoin, ethereum, and litecoin.They're based in San Francisco, California.</p>
-                    <a href="https://www.coinbase.com/" target="_blank" class="btn btn-light border-dark">Coinbase</a>
-                  </div>
-                </div>
+  <script src="js/darkswitch.js">
+  </script>
+</body>
 
-                <div class="card">
-                  <img class="card-img-top" src="img/binance.jpg" alt="binance logo">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Binance</h5>
-                    <p class="card-text">Blockchain and crypto asset exchange
-                      Delivering a secure, fast, and seamless trading experience, fueled by BNB.One of the biggest Crypto exchange in
-                      the world.</p>
-                    <a href="https://www.binance.com/en" target="_blank" class="btn btn-light border-dark">Binance</a>
-                  </div>
-                </div>
-          
-                <div class="card">
-                  <img class="card-img-top" src="img/Huobi-logo.jpg" alt="Huobi logo">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Huobi</h5>
-                    <p class="card-text">Introduction
-                      Huobi Group is a leading global digital asset financial service provider. Upholding the idea of “empowering
-                      financial
-                      services and liberating global wealth” as our mission and “putting users first” as our concept, Huobi Group is
-                      committed
-                      to providing secure, professional, credible and quality services for its global users.</p>
-                    <a href="https://www.huobi.com/en-us/" target="_blank" class="btn btn-light border-dark">Huobi</a>
-                  </div>
-                </div>
-              </div>
-              </div>
-              </div>
-       
-      <!--End of Cards-->
-
-    <!-- Bootstrap JavaScript -->
-    <script src="js/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-    <!-- Menu Toggle Script -->
-    <script>
-      $("#menu-toggle").click(function (e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-      });
-    </script>
-    <!--Theme JS-->
-    <script src="js/darkswitch.js"></script>
-    </body>
-    
-    </html>
+</html>

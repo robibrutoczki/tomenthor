@@ -3,7 +3,6 @@
  */
 $(document).ready(function () {
     $('#load_data1').click(function () {
-
         function parseData(createGraph) {
             Papa.parse("data/b9.csv", {
                 download: true,
@@ -14,48 +13,45 @@ $(document).ready(function () {
         }
 
         function createGraph(data) {
-            var years = ["date"];
+            let years = ["date"];
             high = ["High"];
             low = ["Low"];
             open = ["Open"];
             close = ["Close"];
-
-            for (var i = 1; i < data.length; i++) {
+            for (let i = 1; i < data.length; i++) {
                 years.push(data[i][0]);
                 high.push(data[i][3]);
                 low.push(data[i][4]);
                 open.push(data[i][2]);
                 close.push(data[i][5]);
             }
-
-
             var chart = c3.generate({
-
-
-                bindto: '#chart1', padding: {
+                bindto: '#chart1',
+                padding: {
                     left: 40,
                     right: 30
                 },
                 point: {
                     show: false
                 },
-
                 data: {
                     columns: [
                         high, low
                     ],
-                     type: 'area-spline'
-
-                }, color: {
-                    pattern: ['#ed2913','#1375ed']
-                },grid: {
+                    type: 'area-spline'
+                },
+                color: {
+                    pattern: ['#ed2913', '#1375ed']
+                },
+                grid: {
                     x: {
                         show: true
                     },
                     y: {
                         show: true
                     }
-                }, subchart: {
+                },
+                subchart: {
                     show: true
                 },
                 axis: {
@@ -70,7 +66,6 @@ $(document).ready(function () {
                         }
                     }
                 },
-                
                 zoom: {
                     enabled: true
                 },
@@ -78,16 +73,13 @@ $(document).ready(function () {
                     position: 'top'
                 }
             });
-
-
             var chart = c3.generate({
                 bindto: '#chart2',
-
                 data: {
                     columns: [
                         open, close
-                    ], type: 'spline',
-
+                    ],
+                    type: 'spline',
                 },
                 axis: {
                     x: {
@@ -108,24 +100,23 @@ $(document).ready(function () {
                     position: 'top'
                 }
             });
-
             var chart = c3.generate({
-                bindto: '#chart3', padding: {
+                bindto: '#chart3',
+                padding: {
                     left: 40,
                     right: 30
                 },
                 point: {
                     show: false
                 },
-
                 data: {
                     columns: [
                         low
-                    ], type: 'area-spline',
+                    ],
+                    type: 'area-spline',
                 },
                 axis: {
                     x: {
-                       
                         categories: years,
                         tick: {
                             multiline: false,
@@ -134,7 +125,8 @@ $(document).ready(function () {
                             }
                         }
                     }
-                }, subchart: {
+                },
+                subchart: {
                     show: true
                 },
                 zoom: {
@@ -144,15 +136,14 @@ $(document).ready(function () {
                     position: 'top'
                 }
             });
-
             var chart = c3.generate({
                 bindto: '#chart4',
-
                 data: {
                     columns: [
                         high
                     ]
-                }, subchart: {
+                },
+                subchart: {
                     show: true
                 },
                 axis: {
@@ -174,15 +165,15 @@ $(document).ready(function () {
                     position: 'top'
                 }
             });
-
             var chart = c3.generate({
                 bindto: '#chart5',
-
                 data: {
                     columns: [
                         open
-                    ], type: 'bar'
-                }, bar: {
+                    ],
+                    type: 'bar'
+                },
+                bar: {
                     width: {
                         ratio: 0.8 // this makes bar width 50% of length between ticks
                     }
@@ -191,7 +182,6 @@ $(document).ready(function () {
                 },
                 axis: {
                     x: {
-
                         categories: years,
                         tick: {
                             multiline: false,
@@ -208,27 +198,27 @@ $(document).ready(function () {
                     position: 'top'
                 }
             });
-
             var chart = c3.generate({
-                bindto: '#chart6', 
-
+                bindto: '#chart6',
                 data: {
                     columns: [
                         close
-                    ], type: 'bar'
-                }, bar: {
+                    ],
+                    type: 'bar'
+                },
+                bar: {
                     width: {
-                        ratio: 0.8// this makes bar width 50% of length between ticks
+                        ratio: 0.8 // this makes bar width 50% of length between ticks
                     }
                     // or
                     //width: 100 // this makes bar width 100px
-                }, subchart: {
+                },
+                subchart: {
                     type: 'line',
                     show: true
                 },
                 axis: {
                     x: {
-
                         categories: years,
                         tick: {
                             multiline: false,
@@ -246,9 +236,6 @@ $(document).ready(function () {
                 }
             });
         }
-
-
-
         parseData(createGraph);
     });
 });

@@ -2,226 +2,194 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+  <meta content="" name="description">
+  <meta content="" name="author">
   <title>Dashboard-Charts</title>
-
   <!--Favicon-->
-  <link rel="shortcut icon" type="image/png" href="img/en-fav.png" />
-          
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-          
-          <!-- Custom style -->
-     
-   
-          <link href="css/c3.css" rel="stylesheet" type="text/css">
-          <link href="css/sidebar.css" rel="stylesheet">
-<!--Theme JS-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="img/en-fav.png" rel="shortcut icon" type="image/png">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom style -->
+  <link href="css/c3.css" rel="stylesheet" type="text/css">
+  <link href="css/sidebar.css" rel="stylesheet">
+  <!--Theme JS-->
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+  <!--Fontawesome-->
 
-<!--Fontawesome-->
-<script src="https://kit.fontawesome.com/97e327c4f9.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/97e327c4f9.js">
+  </script>
+  <!--Ticker.js-->
 
-<!--Ticker.js-->
-<script src="js/ticker.js"></script>
+  <script src="js/ticker.js">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script><!-- Load d3.js and c3.js -->
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- Load d3.js and c3.js -->
-  <script src="js/d3.v3.min.js"></script>
-  <script src="js/c3.min.js"></script>
-  
-  <!-- Load papaparse.js -->
-  <script src="js/papaparse.min.js"></script>
+  <script src="js/d3.v3.min.js">
+  </script>
+  <script src="js/c3.min.js">
+  </script><!-- Load papaparse.js -->
 
+  <script src="js/papaparse.min.js">
+  </script>
 </head>
 
-
 <body id="body">
-
   <div class="d-flex" id="wrapper">
-
-<!-- Sidebar -->
-
-  <div class=" border-right" id="sidebar-wrapper">
-  <div class="sidebar-heading">Dashboard</div>
-  <div class="list-group list-group-flush" id="list">
-    <a href="index.html" class="list-group-item border-bottom list-group-item-action"><i class="fab fa-artstation">
-      </i> About</a>
-    <a href="ticker.html" class="list-group-item border-bottom list-group-item-action "><i class="fab fa-btc"> </i> BTC
-      tickers</a>
-    <a href="table.html" class="list-group-item border-bottom list-group-item-action "><i class="fas fa-table">
-      </i> Tables</a>
-    <a href="exchange.html" class="list-group-item border-bottom list-group-item-action "><i
-        class="fas fa-exchange-alt"> </i> Excange</a>
-    <a href="charts.html" id="side" class="list-group-item border-bottom list-group-item-action "><i class="fas fa-chart-bar">
-      </i> Charts</a>
-    <a href="github.html" class="list-group-item border-bottom list-group-item-action "><i class="fab fa-github-square">
-      </i> Github</a>
-          <a href="http://robbieb.co.uk/#contact" target="_blank" class="list-group-item border-bottom list-group-item-action "><i
-              class="fas fa-user-circle"></i>
-            Contact</a>
-  </div>
-</div>
-<!-- End of Sidebar -->
-
-<!-- Navbar -->
- <div id="page-content-wrapper">
-  <nav class="navbar navbar-collapse  navbar-light border-bottom">
-    <button class="btn btn-light border-dark" id="menu-toggle">Dash</button>
-    <div class="custom-control  justify-content-end custom-switch"></div>
-    <button class="btn btn-light border-dark" id="darkSwitch">Dark</button>
-  </nav>
-<!---End of Navbar-->
-
-<!--Content-->
-  <div class="container-fluid">
-
-    <div class="marquee">
-      <table class="table table-m">
-        <tr>
-          <th scope="col">BTC</th>
-          <td class="btcusd"></td>
-          <th scope="col">ETH</th>
-          <td class="ethusd"></td>
-          <th scope="col">XRP</th>
-          <td class="xrpusd"></td>
-          <th scope="col">LTC</th>
-          <td class="ltcusd"></td>
-          <th scope="col">BCH</th>
-          <td class="bchusd"></td>
-          <th scope="col">BTC</th>
-          <td class="btcusd"></td>
-          <th scope="col">ETH</th>
-          <td class="ethusd"></td>
-          <th scope="col">XRP</th>
-          <td class="xrpusd"></td>
-          <th scope="col">LTC</th>
-          <td class="ltcusd"></td>
-          <th scope="col">BCH</th>
-          <td class="bchusd"></td>
-          <th scope="col">BTC</th>
-          <td class="btcusd"></td>
-          <th scope="col">ETH</th>
-          <td class="ethusd"></td>
-          <th scope="col">XRP</th>
-          <td class="xrpusd"></td>
-          <th scope="col">LTC</th>
-          <td class="ltcusd"></td>
-          <th scope="col">BCH</th>
-          <td class="bchusd"></td>
-        </tr>
-      </table>
-    </div>
-
-        <h1 class="text-center">Historical chart of BTC</h1>
-        
-        <div class="text-center m-1">
-          <button type="button" name="load_data" id="load_data1" class="btn btn-info m-2">Sept 2019</button>
-          <button type="button" name="load_data" id="load_data2" class="btn btn-info m-2">Oct 2019</button>
-          <button type="button" name="load_data" id="load_data3" class="btn btn-info m-2">Nov 2019</button>
-          <button type="button" name="load_data" id="load_data4" class="btn btn-info m-2">Dec 2019</button>
+    <!-- Sidebar -->
+    <div class=" border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">
+        Dashboard
+      </div>
+      <div class="list-group list-group-flush" id="list">
+        <a class="list-group-item border-bottom list-group-item-action" href="index.html"><i
+            class="fab fa-artstation"></i> About</a> <a class="list-group-item border-bottom list-group-item-action"
+          href="ticker.html"><i class="fab fa-btc"></i> BTC tickers</a> <a
+          class="list-group-item border-bottom list-group-item-action" href="table.html"><i class="fas fa-table"></i>
+          Tables</a> <a class="list-group-item border-bottom list-group-item-action" href="exchange.html"><i
+            class="fas fa-exchange-alt"></i> Excange</a> <a class="list-group-item border-bottom list-group-item-action"
+          href="charts.html" id="side"><i class="fas fa-chart-bar"></i> Charts</a> <a
+          class="list-group-item border-bottom list-group-item-action" href="github.html"><i
+            class="fab fa-github-square"></i> Github</a> <a class="list-group-item border-bottom list-group-item-action"
+          href="http://robbieb.co.uk/#contact" target="_blank"><i class="fas fa-user-circle"></i> Contact</a>
+      </div>
+    </div><!-- End of Sidebar -->
+    <!-- Navbar -->
+    <div id="page-content-wrapper">
+      <nav class="navbar navbar-collapse navbar-light border-bottom">
+        <button class="btn btn-light border-dark" id="menu-toggle">Dash</button>
+        <div class="custom-control justify-content-end custom-switch"></div><button class="btn btn-light border-dark"
+          id="darkSwitch">Dark</button>
+      </nav>
+      <!---End of Navbar-->
+      <!--Content-->
+      <div class="container-fluid">
+        <div class="marquee">
+          <table class="table table-m">
+            <tr>
+              <th scope="col">BTC</th>
+              <td class="btcusd"></td>
+              <th scope="col">ETH</th>
+              <td class="ethusd"></td>
+              <th scope="col">XRP</th>
+              <td class="xrpusd"></td>
+              <th scope="col">LTC</th>
+              <td class="ltcusd"></td>
+              <th scope="col">BCH</th>
+              <td class="bchusd"></td>
+              <th scope="col">BTC</th>
+              <td class="btcusd"></td>
+              <th scope="col">ETH</th>
+              <td class="ethusd"></td>
+              <th scope="col">XRP</th>
+              <td class="xrpusd"></td>
+              <th scope="col">LTC</th>
+              <td class="ltcusd"></td>
+              <th scope="col">BCH</th>
+              <td class="bchusd"></td>
+              <th scope="col">BTC</th>
+              <td class="btcusd"></td>
+              <th scope="col">ETH</th>
+              <td class="ethusd"></td>
+              <th scope="col">XRP</th>
+              <td class="xrpusd"></td>
+              <th scope="col">LTC</th>
+              <td class="ltcusd"></td>
+              <th scope="col">BCH</th>
+              <td class="bchusd"></td>
+            </tr>
+          </table>
         </div>
-    
-   
-    <!--Card 1-2-->
-<div class="card-deck mt-2">
- 
-  <div class="card">
-    
-    <div class="card-body">
-      <h5 class="card-title">BTC High/Low</h5>
-      <p class="card-text card-ch" id="chart1"></p>
-     
-    </div>
-  </div>
-  <div class="card">
-
-    <div class="card-body">
-      <h5 class="card-title">BTC Open/Close</h5>
-    <p class="card-text card-ch" id="chart2"></p>
-    </div>
-  </div>
- </div>
-<!--Card 3-4 -->
-
-<div class="card-deck mt-2">
-  
-  <div class="card">
-   
-    <div class="card-body">
-      <h5 class="card-title">BTC Low</h5>
-    <p class="card-text card-ch " id="chart3"></p></div>
-  </div>
-
-  <div class="card">
-    
-    <div class="card-body">
-      <h5 class="card-title">BTC High</h5>
-    <p class="card-text card-ch" id="chart4"></p></div>
-  </div>
-  </div>
-
-  <!--Card 5-6 -->
-    <div class="card-deck mt-2">
-     
-      <div class="card">
-        
-        <div class="card-body">
-          <h5 class="card-title">BTC Open</h5>
-        <p class="card-text card-ch" id="chart5"></p></div>
-      </div>
-      <div class="card">
-       
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-        <p class="card-text card-ch" id="chart6"></p></div>
+        <h1 class="text-center">Historical chart of BTC</h1>
+        <div class="text-center m-1">
+          <button class="btn btn-info m-2" id="load_data1" name="load_data" type="button">Sept 2019</button> <button
+            class="btn btn-info m-2" id="load_data2" name="load_data" type="button">Oct 2019</button> <button
+            class="btn btn-info m-2" id="load_data3" name="load_data" type="button">Nov 2019</button> <button
+            class="btn btn-info m-2" id="load_data4" name="load_data" type="button">Dec 2019</button>
+        </div>
+        <!--Card 1-2-->
+        <div class="card-deck mt-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">BTC High/Low</h5>
+              <p class="card-text card-ch" id="chart1"></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">BTC Open/Close</h5>
+              <p class="card-text card-ch" id="chart2"></p>
+            </div>
+          </div>
+        </div>
+        <!--Card 3-4 -->
+        <div class="card-deck mt-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">BTC Low</h5>
+              <p class="card-text card-ch" id="chart3"></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">BTC High</h5>
+              <p class="card-text card-ch" id="chart4"></p>
+            </div>
+          </div>
+        </div>
+        <!--Card 5-6 -->
+        <div class="card-deck mt-2">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">BTC Open</h5>
+              <p class="card-text card-ch" id="chart5"></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text card-ch" id="chart6"></p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  </div>
-  </div>
-  <!-- End of Content -->
-
- 
+  </div><!-- End of Content -->
   <!-- Bootstrap JavaScript -->
-   
- 
-  
-<!-- Graphs -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-  
-<!--Charts-->
-  <script src="js/chartbase.js"></script>
-  <script src="js/chart9.js"></script>
-  <script src="js/chart10.js"></script>
-  <script src="js/chart11.js"></script>
-  <script src="js/chart12.js"></script>
+  <!-- Graphs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js">
+  </script>
+  <!--Charts-->
 
-<!-- Bootstrap core JavaScript -->
-<script src="js/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-<!-- Menu Toggle Script -->
-<script>
-  $("#menu-toggle").click(function (e) {
-    e.preventDefault();
-    $("#wrapper").toggleClass("toggled");
-  });
-</script>
-
-<!--Ticker.js-->
-<script src="js/ticker.js"></script>
-
-<!--Theme JS-->
-<script src="js/darkswitch.js"></script>
-
+  <script src="js/chartbase.js">
+  </script>
+  <script src="js/chart9.js">
+  </script>
+  <script src="js/chart10.js">
+  </script>
+  <script src="js/chart11.js">
+  </script>
+  <script src="js/chart12.js">
+  </script> <!-- Bootstrap core JavaScript -->
+  <script src="js/jquery.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+  </script> <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+  <!--Ticker.js-->
+  <script src="js/ticker.js">
+  </script>
+  <!--Theme JS-->
+  <script src="js/darkswitch.js">
+  </script>
 </body>
 
 </html>

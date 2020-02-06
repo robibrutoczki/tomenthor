@@ -2,78 +2,63 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+  <meta content="" name="description">
+  <meta content="" name="author">
   <title>Dashboard-Github</title>
-
   <!--Favicon-->
-  <link rel="shortcut icon" type="image/png" href="img/en-fav.png" />
-
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+  <link href="img/en-fav.png" rel="shortcut icon" type="image/png"><!-- Bootstrap core CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom style -->
   <link href="css/sidebar.css" rel="stylesheet">
-  <link href="css/github.css" rel="stylesheet"> 
-
+  <link href="css/github.css" rel="stylesheet">
   <!--Theme JS-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/github.js"></script>
 
-   <!--Fontawesome-->
-  <script src="https://kit.fontawesome.com/97e327c4f9.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+  <script src="js/github.js">
+  </script>
+  <!--Fontawesome-->
 
+  <script src="https://kit.fontawesome.com/97e327c4f9.js">
+  </script>
   <!--Ticker.js-->
-  <script src="js/ticker.js"></script>
+
+  <script src="js/ticker.js">
+  </script>
 </head>
 
 <body>
-
   <div class="d-flex" id="wrapper">
-
-  <!-- Sidebar -->
+    <!-- Sidebar -->
     <div class=" border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">Dashboard</div>
-      <div class="list-group list-group-flush" id="list">
-        <a href="index.html" class="list-group-item border-bottom list-group-item-action"><i class="fab fa-artstation">
-          </i> About</a>
-        <a href="ticker.html" class="list-group-item border-bottom list-group-item-action "><i class="fab fa-btc"> </i>
-          BTC
-          tickers</a>
-        <a href="table.html" class="list-group-item border-bottom list-group-item-action "><i
-            class="fas fa-table">
-          </i> Tables</a>
-        <a href="exchange.html" class="list-group-item border-bottom list-group-item-action "><i
-            class="fas fa-exchange-alt"> </i> Excange</a>
-        <a href="charts.html" class="list-group-item border-bottom list-group-item-action "><i class="fas fa-chart-bar">
-          </i> Charts</a>
-        <a href="github.html" id="side" class="list-group-item border-bottom list-group-item-action "><i
-            class="fab fa-github-square">
-          </i> Github</a>
-        <a href="http://robbieb.co.uk/#contact" target="_blank"
-          class="list-group-item border-bottom list-group-item-action "><i class="fas fa-user-circle"></i>
-          Contact</a>
+      <div class="sidebar-heading">
+        Dashboard
       </div>
-    </div>
-  <!-- End of Sidebar -->
-
-  <!-- Navbar -->
-
+      <div class="list-group list-group-flush" id="list">
+        <a class="list-group-item border-bottom list-group-item-action" href="index.html"><i
+            class="fab fa-artstation"></i> About</a> <a class="list-group-item border-bottom list-group-item-action"
+          href="ticker.html"><i class="fab fa-btc"></i> BTC tickers</a> <a
+          class="list-group-item border-bottom list-group-item-action" href="table.html"><i class="fas fa-table"></i>
+          Tables</a> <a class="list-group-item border-bottom list-group-item-action" href="exchange.html"><i
+            class="fas fa-exchange-alt"></i> Excange</a> <a class="list-group-item border-bottom list-group-item-action"
+          href="charts.html"><i class="fas fa-chart-bar"></i> Charts</a> <a
+          class="list-group-item border-bottom list-group-item-action" href="github.html" id="side"><i
+            class="fab fa-github-square"></i> Github</a> <a class="list-group-item border-bottom list-group-item-action"
+          href="http://robbieb.co.uk/#contact" target="_blank"><i class="fas fa-user-circle"></i> Contact</a>
+      </div>
+    </div><!-- End of Sidebar -->
+    <!-- Navbar -->
     <div id="page-content-wrapper">
-      <nav class="navbar navbar-collapse  navbar-light border-bottom">
+      <nav class="navbar navbar-collapse navbar-light border-bottom">
         <button class="btn btn-light border-dark" id="menu-toggle">Dash</button>
-        <div class="custom-control  justify-content-end custom-switch"></div>
-        <button class="btn btn-light border-dark" id="darkSwitch">Dark</button>
+        <div class="custom-control justify-content-end custom-switch"></div><button class="btn btn-light border-dark"
+          id="darkSwitch">Dark</button>
       </nav>
-   <!---End of Navbar-->
-
+      <!---End of Navbar-->
       <div class="container-fluid">
-  <!--MARQUEE-->
+        <!--MARQUEE-->
         <div class="marquee">
           <table class="table table-m">
             <tr>
@@ -109,51 +94,42 @@
               <td class="bchusd"></td>
             </tr>
           </table>
-        </div>
-    <!-- End of MARQUEE -->
-     
+        </div><!-- End of MARQUEE -->
         <h1 class="mt-4 text-center">Github</h1>
         <hr class="my-4">
         <div class="row bg-color-contact">
-        
           <div class="col m-1 text-center">
             <h3 class="contact-heading uppercase">View My GitHub Projects :</h3>
             <h5 class="uppercase">You can also search on other user profiles...</h5>
           </div>
-          </div>
-
+        </div>
         <div class="jumbotron col m-1">
-        
           <div class="center-form form">
-            <input type="text" class="form-control" id="gh-username" value="robibrutoczki" oninput="fetchGitHubInformation()" />
-          
+            <input class="form-control" id="gh-username" oninput="fetchGitHubInformation()" type="text"
+              value="robibrutoczki">
             <div id="gh-user-data"></div>
             <div id="gh-repo-data"></div>
-          
           </div>
         </div>
       </div>
     </div>
-    </div>
-  <!-- End of Content-->
-
-  
- 
-
+  </div><!-- End of Content-->
   <!-- Bootstrap JavaScript -->
-    <script src="js/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="js/jquery.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+  </script> <!-- Menu Toggle Script -->
 
-  <!-- Menu Toggle Script -->
-    <script>
+  <script>
     $("#menu-toggle").click(function (e) {
       e.preventDefault();
       $("#wrapper").toggleClass("toggled");
     });
-   </script>
-<!--Theme JS-->
-    <script src="js/darkswitch.js"></script>
+  </script>
+  <!--Theme JS-->
+
+  <script src="js/darkswitch.js">
+  </script>
 </body>
 
 </html>

@@ -14,13 +14,13 @@ $(document).ready(function () {
         }
 
         function createGraph(data) {
-            var years = ["date"];
+            let years = ["date"];
             high = ["High"];
             low = ["Low"];
             open = ["Open"];
             close = ["Close"];
 
-            for (var i = 1; i < data.length; i++) {
+            for (let i = 1; i < data.length; i++) {
                 years.push(data[i][0]);
                 high.push(data[i][3]);
                 low.push(data[i][4]);

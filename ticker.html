@@ -1,72 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+  <meta content="" name="description">
+  <meta content="" name="author">
   <title>Dashbord-Ticker</title>
-
   <!--Favicon-->
-  <link rel="shortcut icon" type="image/png" href="img/en-fav.png" />
-
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+  <link href="img/en-fav.png" rel="shortcut icon" type="image/png"><!-- Bootstrap core CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom style -->
   <link href="css/sidebar.css" rel="stylesheet">
   <link href="css/github.css" rel="stylesheet">
-  
   <!--Theme JS-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="js/github.js"></script>
-  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+  <script src="js/github.js">
+  </script>
   <!--Fontawesome-->
-  <script src="https://kit.fontawesome.com/97e327c4f9.js" crossorigin="anonymous"></script>
-  
+
+  <script src="https://kit.fontawesome.com/97e327c4f9.js">
+  </script>
   <!--Ticker.js-->
-  <script src="js/ticker.js"></script></head>
+
+  <script src="js/ticker.js">
+  </script>
+</head>
 
 <body id="body">
   <div class="d-flex" id="wrapper">
-
     <!-- Sidebar -->
     <div class=" border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">Dashboard</div>
-      <div class="list-group list-group-flush" id="list">
-        <a href="index.html" class="list-group-item border-bottom list-group-item-action"><i class="fab fa-artstation">
-          </i> About</a>
-        <a href="ticker.html" id="side" class="list-group-item border-bottom list-group-item-action "><i class="fab fa-btc"> </i>
-          BTC
-          tickers</a>
-        <a href="table.html" class="list-group-item border-bottom list-group-item-action "><i class="fas fa-table">
-          </i> Tables</a>
-        <a href="exchange.html" class="list-group-item border-bottom list-group-item-action "><i
-            class="fas fa-exchange-alt"> </i> Excange</a>
-        <a href="charts.html" class="list-group-item border-bottom list-group-item-action "><i class="fas fa-chart-bar">
-          </i> Charts</a>
-        <a href="github.html" class="list-group-item border-bottom list-group-item-action "><i
-            class="fab fa-github-square">
-          </i> Github</a>
-        <a href="http://robbieb.co.uk/#contact" target="_blank"
-          class="list-group-item border-bottom list-group-item-action "><i class="fas fa-user-circle"></i>
-          Contact</a>
+      <div class="sidebar-heading">
+        Dashboard
       </div>
-    </div>
-    <!-- End of Sidebar-->
-
+      <div class="list-group list-group-flush" id="list">
+        <a class="list-group-item border-bottom list-group-item-action" href="index.html"><i
+            class="fab fa-artstation"></i> About</a> <a class="list-group-item border-bottom list-group-item-action"
+          href="ticker.html" id="side"><i class="fab fa-btc"></i> BTC tickers</a> <a
+          class="list-group-item border-bottom list-group-item-action" href="table.html"><i class="fas fa-table"></i>
+          Tables</a> <a class="list-group-item border-bottom list-group-item-action" href="exchange.html"><i
+            class="fas fa-exchange-alt"></i> Excange</a> <a class="list-group-item border-bottom list-group-item-action"
+          href="charts.html"><i class="fas fa-chart-bar"></i> Charts</a> <a
+          class="list-group-item border-bottom list-group-item-action" href="github.html"><i
+            class="fab fa-github-square"></i> Github</a> <a class="list-group-item border-bottom list-group-item-action"
+          href="http://robbieb.co.uk/#contact" target="_blank"><i class="fas fa-user-circle"></i> Contact</a>
+      </div>
+    </div><!-- End of Sidebar-->
     <!-- Navbar -->
     <div id="page-content-wrapper">
-      <nav class="navbar navbar-collapse  navbar-light border-bottom">
+      <nav class="navbar navbar-collapse navbar-light border-bottom">
         <button class="btn btn-light border-dark" id="menu-toggle">Dash</button>
-        <div class="custom-control  justify-content-end custom-switch"></div>
-        <button class="btn btn-light border-dark" id="darkSwitch">Dark</button>
+        <div class="custom-control justify-content-end custom-switch"></div><button class="btn btn-light border-dark"
+          id="darkSwitch">Dark</button>
       </nav>
       <!---End of Navbar-->
-
       <!--Content-->
       <div class="container-fluid">
         <div class="marquee">
@@ -104,229 +94,198 @@
               <td class="bchusd"></td>
             </tr>
           </table>
-        </div>
-        <!-- End of MARQUEE -->
-  <h1 class="mt-0 mb-3 text-center">Tickers</h1>
-    <div class="container-fluid"></div>
-      <!-- CARDS -->
-      <div class="card-deck">
-        <div class="card" >
-          <!--BTC/USD ticker-->
-          <div class="card-body">
-            <h5 class="card-title">Bitcoin ticker:</h5>
-            <table class="table table-c table-hover table-outline-light ">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">BTC/USD</th>
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr>
-                  <th scope="row">Bid :</th>
-                  <td class="btcusd"></td>
-                </tr>
-
-                <tr>
-                  <th scope="row">Ask :</th>
-                  <td id="buy"></td>
-                </tr>
-
-                <tr>
-                  <th scope="row">Vol :</th>
-                  <td id="volume"></td>
-                </tr>
-              </tbody>
-            </table>
+        </div><!-- End of MARQUEE -->
+        <h1 class="mt-0 mb-3 text-center">Tickers</h1>
+        <div class="container-fluid"></div><!-- CARDS -->
+        <div class="card-deck">
+          <div class="card">
+            <!--BTC/USD ticker-->
+            <div class="card-body">
+              <h5 class="card-title">Bitcoin ticker:</h5>
+              <table class="table table-c table-hover table-outline-light">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">BTC/USD</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Bid :</th>
+                    <td class="btcusd"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ask :</th>
+                    <td id="buy"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Vol :</th>
+                    <td id="volume"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!--BTC/EUR ticker-->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">BTC/Euro ticker:</h5>
+              <table class="table table-c table-hover table-outline-light">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">BTC/EUR</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Bid :</th>
+                    <td id="selleuro"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ask :</th>
+                    <td id="buyeuro"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Vol :</th>
+                    <td id="volumeeuro"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!--Eth/USD ticker-->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Ethereum ticker:</h5>
+              <table class="table table-c table-hover table-outline-light">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">ETH/USD</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Bid :</th>
+                    <td class="ethusd"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ask :</th>
+                    <td id="buyeth"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Vol :</th>
+                    <td id="volumeeth"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div><!-- Second deck of cards -->
+        <!--BTC/USD ticker-->
+        <div class="card-deck mt-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Litecoin ticker:</h5>
+              <table class="table table-c table-hover table-outline-light">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">LTC/USD</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Bid :</th>
+                    <td class="ltcusd"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ask :</th>
+                    <td id="ltcbuy"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Vol :</th>
+                    <td class="volumeltc"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!--XRP/USD ticker-->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">XRP ticker:</h5>
+              <table class="table table-c table-hover table-outline-light">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">XRP/USD</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Bid :</th>
+                    <td class="xrpusd"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ask :</th>
+                    <td class="xrpbuy"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Vol :</th>
+                    <td id="volumexrp"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!--BCH/USD ticker-->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">BitcoinCash ticker:</h5>
+              <table class="table table-c table-hover table-outline-light">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">BCH/USD</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Bid :</th>
+                    <td class="bchusd"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Ask :</th>
+                    <td id="buybch"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Vol :</th>
+                    <td id="volumebch"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
-  
-        <!--BTC/EUR ticker-->
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">BTC/Euro ticker:</h5>
-            <table class="table table-c table-hover table-outline-light ">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">BTC/EUR</th>
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr>
-                  <th scope="row">Bid :</th>
-                  <td id="selleuro"></td>
-                </tr>
-
-                <tr>
-                  <th scope="row">Ask :</th>
-                  <td id="buyeuro"></td>
-                </tr>
-
-                <tr>
-                  <th scope="row">Vol :</th>
-                  <td id="volumeeuro"></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
       </div>
-
-<!--Eth/USD ticker-->
-
-  <div class="card">
-      <div class="card-body">
-            <h5 class="card-title">Ethereum ticker:</h5>
-            <table class="table table-c table-hover table-outline-light">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">ETH/USD</th>
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr>
-                  <th scope="row">Bid :</th>
-                  <td class="ethusd"></td>
-                </tr>
-
-                <tr>
-                  <th scope="row">Ask :</th>
-                  <td id="buyeth"></td>     
-                </tr>
-
-                <tr>
-                  <th scope="row">Vol :</th>
-                  <td id="volumeeth"></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
     </div>
-  </div>
-
-<!-- Second deck of cards -->
-   <!--BTC/USD ticker-->
-  <div class="card-deck mt-3">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Litecoin ticker:</h5>
-        <table class="table table-c table-hover table-outline-light ">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">LTC/USD</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <th scope="row">Bid :</th>
-              <td class="ltcusd"></td>
-            </tr>
-
-            <tr>
-              <th scope="row">Ask :</th>
-              <td id="ltcbuy"></td>
-            </tr>
-
-            <tr>
-              <th scope="row">Vol :</th>
-              <td class="volumeltc"></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-  </div>
-   
-<!--XRP/USD ticker-->
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">XRP ticker:</h5>
-        <table class="table table-c table-hover table-outline-light ">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">XRP/USD</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <th scope="row">Bid :</th>
-               <td class="xrpusd"></td>
-            </tr>
-
-            <tr>
-              <th scope="row">Ask :</th>
-              <td class="xrpbuy"></td>
-            </tr>
-
-            <tr>
-              <th scope="row">Vol :</th>
-              <td id="volumexrp"></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-   </div>
-
-<!--BCH/USD ticker-->
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">BitcoinCash ticker:</h5>
-        <table class="table table-c table-hover table-outline-light ">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">BCH/USD</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Bid :</th>
-              <td class="bchusd"></td>
-
-
-            </tr>
-            <tr>
-              <th scope="row">Ask :</th>
-              <td id="buybch"></td>
-
-
-            </tr>
-            <tr>
-              <th scope="row">Vol :</th>
-              <td id="volumebch"></td>
-
-
-            </tr>
-          </tbody>
-        </table>
-      </div>
-   </div>
-  </div>
-</div>
-</div>
-</div>
-<!-- End of Content-->
-<!-- Bootstrap JavaScript -->
-<script src="js/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-<!-- Menu Toggle Script -->
-<script>
-  $("#menu-toggle").click(function (e) {
-    e.preventDefault();
-    $("#wrapper").toggleClass("toggled");
-  });
-</script>
-<!--Theme JS-->
-<script src="js/darkswitch.js"></script>
+  </div><!-- End of Content-->
+  <!-- Bootstrap JavaScript -->
+  <script src="js/jquery.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+  </script> <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+  <!--Theme JS-->
+  <script src="js/darkswitch.js">
+  </script>
 </body>
 
 </html>
