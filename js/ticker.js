@@ -13,7 +13,7 @@ function ticker() {
             $('#buyeth').html(data.ask);
             $('.ethusd').html(data.bid);
             $('#volumeeth').html(parseFloat(data.volume).toFixed(2));
-            // to make it two decimals used parseFloat
+            // to make it two decimals I used parseFloat
 
        
             ticker();
