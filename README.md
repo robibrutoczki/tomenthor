@@ -4,7 +4,7 @@
 
 Cryptocurrency Dashboard gives an insight on some of the "main" cryptocurrencies. This is kind of an educational dashboard. The user can learn about all aspect of trading cryptocurrencies.
 
-Chart page:<img src="C:\wamp64\www\Base\img\forreadme.jpg" style="zoom:0%;height:50%" />
+Chart page:<img src="https://github.com/robibrutoczki/tomenthor/blob/master/img/forreadme.jpg" style="zoom:0%;height:50%" />
 
 ## User experience 
 
