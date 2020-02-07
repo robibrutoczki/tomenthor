@@ -32,7 +32,7 @@ The following features have been added to make the user experience interactive
 
 #### User Stories
 
- Dash Board would be useful for :
+ Dashboard would be useful for :
 
 - People who want to learn about Cryptocurrencies
 - People who want to know more about historical prices of Cryptocurrencies
